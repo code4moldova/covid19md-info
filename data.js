@@ -3,3 +3,4 @@ var data = [{"data": "09/03/2020", "ora": "17:00", "infectate": 1, "suspecte": 6
  {"data": "15/03/2020", "ora": "10:00", "infectate": 12, "suspecte": 27, "fise epidemologice": 5651, "monitorzare": 8158, "intrate in tara": 16648, "linia_verde": 70, "decedati": 0, "vindecati": 0},
  {"data": "15/03/2020", "ora": "18:00", "infectate": 23, "suspecte": 11, "fise epidemologice": 5651, "monitorzare": 8158, "intrate in tara": 16648, "linia_verde": 70, "decedati": 0, "vindecati": 3}
  ]
+var lastUpdate = "16/03/2020(10:00)";

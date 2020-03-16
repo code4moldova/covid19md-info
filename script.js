@@ -12,6 +12,7 @@
     }
   }
   data = d;
+  $('#dataup').text(lastUpdate);
 
   try {
     //WidgetChart 5
