@@ -43,9 +43,144 @@
     gtag('config', 'UA-160623102-1');
     </script>
 
+    <style>
+   
+.flex{
+    display: flex;
+    width: 100%;
+}
+.flex.middle{
+    align-items: center;
+}
+.flex.center{
+    justify-content: center;
+}
+.flex.justify{
+    justify-content: space-between;
+}
+.flex.one > div{
+    width: 100%;
+}
+.flex.two > div{
+    width: 50%;
+}
+.flex.three > div{
+    width: 33.33%;
+}
+.flex.four > div{
+    width: 25%;
+}
+.flex.five > div{
+    width: 20%;
+}
+
+.flex.spacing{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.flex.spacing > div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.flex.large_spacing{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.flex.large_spacing > div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#header{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+#header,
+.header_main{
+    height: 90px;
+}
+
+.section{
+    position: relative;
+    padding: 60px 0;
+}
+.section.intro{
+    color: #fff;
+    min-height: 650px;
+    background: #751112 url("../images/intro.png") 50% 50% / cover no-repeat;
+}
+.section.intro h1{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
+.section.intro h2{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.infoline{
+    font-size: 15px;
+}
+.info_url{
+    background: #DB1C1C;
+    padding: 2px 20px;
+    font-size: 27px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+}
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 
 <body class="animsition">
+     <div id="header" class="header">
+        <div class="header_main flex middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="infoline">
+                            <a href='datelazi-covid19-md.html'>
+                                <div class="info_url">
+                                    Inapoi
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="langs">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="section intro flex middle" style='min-height: 44px !important;'>
+        <div class="container">
+            <div class="intro_content" >
+                
+            </div>
+        </div>
+    </div>
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
         
