@@ -1,11 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8"/>
-    <title>Mobile First Ajax Contact Form</title>
+    <title>Covid19 Moldova | Centru de informare</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/main.css">
+
+    <meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
+    <meta data-react-helmet="true" name="description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei."/>
+    <meta data-react-helmet="true" property="og:title" content="Date la zi Covid19 in Moldova"/>
+    <meta data-react-helmet="true" property="og:description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei"/>
+    <meta data-react-helmet="true" property="og:type" content="website"/>
+    <meta data-react-helmet="true" property="og:image" content="covid19-moldova.jpg"/>
+    <meta data-react-helmet="true" name="twitter:card" content="summary"/>
+    <meta data-react-helmet="true" name="twitter:creator" content="Volunteers from Code for Moldova"/>
+    <meta data-react-helmet="true" name="twitter:title" content="Date la zi Covid19 in Moldova"/>
+    <meta data-react-helmet="true" name="twitter:description" content="Platforma ce agrega proiecte contra virusului COVID-19 in contextul Moldovei."/>
+
+    <link rel="stylesheet" href="newdesign/css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
@@ -17,12 +29,12 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="infoline">
-                            <span class="info_row">telefoane de contact: <a href="tel:112" class="badge white" title="Apeleaza">112</a> ambulanța</span><span class="info_row"><a href="tel:0 800 1230" class="badge green" title="Apeleaza">0 800 1230</a> linia verde</span>
+                            <span class="info_row">номера телефонов <a href="tel:112" class="badge white" title="Apeleaza">112</a> скорая помощь</span><span class="info_row"><a href="tel:0 800 1230" class="badge green" title="Apeleaza">0 800 1230</a> "орячая линия"</span>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="langs">
-                            <a href="#">РУССКИЙ</a>
+                            <a href="index.html">ROMÂNA</a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +47,7 @@
         <div class="container">
             <div class="intro_content">
                 <h1>
-                    CENTRUL DE INFORMARE
+                    ЦЕНТР ИНФОРМИРОВАНИЯ
                 </h1>
 
                 <h2>
@@ -50,50 +62,49 @@
                     <div>
                         <div class="num flex middle spacing mx-2">
                             <div>
-                                <span class="num_value">29</span>
+                                <span class="num_value infectate"></span>
                             </div>
                             <div>
-                                <span class="num_desc">cazuri <br> comfirmate</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="num flex middle spacing mx-2">
-                            <div>
-                                <span class="num_value">43</span>
-                            </div>
-                            <div>
-                                <span class="num_desc">cazuri <br> suspecte</span>
+                                <span class="num_desc ">подтвержденных <br> случаев</span>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="num flex middle spacing mx-2">
                             <div>
-                                <span class="num_value">11238</span>
+                                <span class="num_value suspecte">43</span>
                             </div>
                             <div>
-                                <span class="num_desc">persoane <br> monitorizate la domiciliu</span>
+                                <span class="num_desc">случаев <br> под подозрением</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="num flex middle spacing mx-2">
+                            <div>
+                                <span class="num_value monitorzare">11238</span>
+                            </div>
+                            <div>
+                                <span class="num_desc">людей, <br> находящихся под домашним наблюдением</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="call_to_action">
-                    <a href="#" class="tap white">
-                        Vezi cum progresează virusul
+                    <a href="datelazi-covid19-md.html" class="tap white">
+                        Посмотреть эволюцию ситуации в Молдове
                     </a>
                 </div>
 
             </div>
         </div>
     </div>
-
-    <div class="section">
+<div class="section">
         <div class="container">
             <div class="heading">
                 <h2>
-                    Simptome
+                    Симптомы
                 </h2>
             </div>
 
@@ -101,152 +112,100 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="sim_box">
-                            <div class="sim_image"><img src="images/s1.svg" alt=""></div>
-                            <div class="sim_title">Febră</div>
+                            <div class="sim_image"><img src="newdesign/images/s1.svg" alt=""></div>
+                            <div class="sim_title">Температура</div>
                             <div class="sim_desc">
-                                Des intâlnit (87.9%)
+                                Часто встречается (87.9%)
                             </div>                        
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="sim_box">
-                            <div class="sim_image"><img src="images/s2.svg" alt=""></div>
-                            <div class="sim_title">Tuse uscată </div>
+                            <div class="sim_image"><img src="newdesign/images/s2.svg" alt=""></div>
+                            <div class="sim_title">Сухой кашель </div>
                             <div class="sim_desc">
-                                Des intâlnit (67.7%)
+                                Часто встречается (67.7%)
                             </div>                           
                         </div>
                         
                     </div>
                     <div class="col-md-4">
                         <div class="sim_box">
-                            <div class="sim_image"><img src="images/s3.svg" alt=""></div>
-                            <div class="sim_title">Oboseală</div>
+                            <div class="sim_image"><img src="newdesign/images/s3.svg" alt=""></div>
+                            <div class="sim_title">Усталость</div>
                             <div class="sim_desc">
-                                Des intâlnit (38.1%)
+                                Часто встречается (38.1%)
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--<div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <div class="sim_box">
-                            <div class="sim_image"><img src="images/s3.svg" alt=""></div>
-                            <div class="sim_title text-red">Dificultăți de respirație</div>
-                            <div class="sim_desc">
-                                Uneori intâlnit. Vorbește despre un caz sever
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="sim_box">
-                            <div class="sim_image"><img src="images/s2.svg" alt=""></div>
-                            <div class="sim_title">Dureri în gît</div>
-                            <div class="sim_desc">
-                                Uneori intâlnit
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <div class="sim_box">
-                            <div class="sim_image"><img src="images/s1.svg" alt=""></div>
-                            <div class="sim_title">Nas curgător (rinoree)</div>
-                            <div class="sim_desc">
-                                Rar intâlnit
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="sim_box">
-                            <div class="sim_image"><img src="images/s3.svg" alt=""></div>
-                            <div class="sim_title">Pneumonie</div>
-                            <div class="sim_desc">
-                                Rar intâlnit. Vorbește despre un caz sever
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                -->
-            </div>
-
-            <div class="call_to_action">
-                <a href="#" class="tap">
-                    Afla mai multe despre virus
-                </a>
             </div>
         </div>
     </div>
-
     <div class="section rec">
         <div class="container">
             <div class="heading">
                 <h2>
-                    Recomandari
+                    Рекомендации
                 </h2>
             </div>
 
             <div class="content">
                 <div class="heading">
                     <h4>
-                    Igienă
+                    Гигиена
                     </h4>
                 </div>
                 <ol>
                     <li>
-                        Spălați-vă cât mai des pe mâini cu apă și săpun sau folosiți o soluție dezinfectantă pe bază de alcool.
+                        Как можно чаще мойте руки с водой и мылом или используйте антисептические средства на основе спирта.
                     </li>
                     <li>
-                        Acoperiți-vă nasul și gura cu un șervețel sau cu pliul cotului atunci când tușiți sau strănutați. Aruncați imediat șervețelele folosite și spălați-vă pe mâini.
+                        Прикрывайте рот и нос салфеткой или согнутым локтем при кашле и чихании. После этого сразу же выбросите салфетку и вымойте руки.
                     </li>
                     <li>
-                        Evitați să vă atingeți ochii, nasul sau gura cu mâinile nespălate.
+                        Старайтесь не трогать глаза, нос и рот немытыми руками.
                     </li>
                     <li>
-                        Evitați să  transmiteți  unul de la altul pahare, farfurii sau obiecte personale și dezinfectați toate suprăfețele care sunt atinse frecvent. Aerisiți de mai multe ori pe zi încăperile.
+                        Старайтесь не передавать друг другу стаканы, тарелки или личные вещи и дезинфицируйте все поверхности, к которым часто прикасаются. Проветривайте помещения по несколько раз в день.
                     </li>
                     <li>
-                        Gătiți bine carne și ouăle.
+                        Правильно готовьте мясо и яйца.
                     </li>
                     <li>
-                        Evitați contactul neprotejat cu animalele sălbatice și domestice.
+                        Избегайте незащищенного контакта с дикими и домашними животными.
                     </li>
                 </ol>
                 <div class="heading">
                     <h4>
-                    Comportament social
+                    Социальное поведение
                     </h4>
                 </div>
                 <ol>
                     <li>
-                        Evitați contactul apropiat cu persoanele care au simptome de gripă și răceală.
+                        Избегайте близких контактов с людьми, у которых симптомы гриппа и простуды.
                     </li>
                     <li>
-                        Evitați pe cât posibil locurile aglomerate și respectați distanța socială de cel puțin 1 metru de la alte persoane.
+                        Избегайте, насколько это возможно, многолюдные места и соблюдайте социальную дистанцию как минимум в 1 метр от других людей.
                     </li>
                     <li>
-                        Faceți față stresului și fiți pozitivi! Contactați familia și prietenii, găsiți-vă o ocupație plăcută și informați-vă din surse credibile.
+                        Боритесь со стрессом и будьте позитивными! Общайтесь с семьей и друзьями, найдите приятное занятие и получайте информацию из проверенных источников.
                     </li>
                 </ol>
                 <div class="heading">
                     <h4>
-                    Asistență medicală
+                    Медицинская помощь
                     </h4>
                 </div>
                 <ol>
                     <li>
-                        Rămâneți acasă dacă aveți simptome de gripă sau răceală. Sunați medicul de familie pentru a solicita sfaturi, NU mergeți din primul moment la unitățile de urgență. Există riscul, în cazul în care sunteți purtător al virusului, să transmiteți și altor persoane noul coronavirus.
+                        Оставайтесь дома, если у вас есть симптомы гриппа или постуды. Позвоните семейному врачу, чтобы попросить совет, НЕ идите сразу же в отделения скорой помощи. В случае, если вы являетесь носителем вируса, есть риск, что вы передадите его другим людям.
                     </li>
                     <li>
-                        Dacă ați călătorit în zone în care circulă COVID-19 sau ați fost în contact cu o persoană bolnavă, apelați medicului de familie, îl informați despre istoricul călătoriilor. Dacă aveți simptome de COVID-19, solicitați de urgență asistență medicală.
+                        Если вы путешествовали в зоны, где наблюдается COVID-19 или если вы контактировали с больным, и у вас появились симптомы COVID-19, позвоните семейному врачу, проинформируйте его об истории ваших путешествий. Если у вас симптомы COVID-19, немедленно обратитесь за медицинской помощью.
                     </li>
                     <li>
-                        Nu recurgeți la auto-medicație.
+                        Не занимайтесь самолечением.
                     </li>
                 </ol>
             </div>
@@ -257,7 +216,7 @@
         <div class="container">
             <div class="heading">
                 <h2>
-                    Intrebări și răspunsuri
+                    Вопросы и ответы
                 </h2>
             </div>
 
@@ -265,150 +224,112 @@
 
                 <div class="question">
                     <h4>
-                        Ce este COVID-19?
+                        Что такое COVID-19?
                     </h4>
                     <p>
-                        COVID-19 este o boală infecțioasă cauzată de coronavirusul recent descoperit. Acest virus, 
-                        precum și boala, au fost necunoscute până la epidemia ce a izbucnit în Wuhan, China, în decembrie 2019.
+                        COVID-19 - это инфекционное заболевание, вызываемое недавно открытым коронавирусом. Этот вирус, как и болезнь, не были известны до начала эпидемии в Ухане, в декабре 2019 года.
                     </p>
                 </div>
 
                 <div class="question">
                     <h4>
-                        Cum se răspândește COVID-19?
+                        Как распространяется COVID-19?
                     </h4>
                     <p>
-                        Oamenii se pot infecta cu COVID-19 de la alte persoane care au virusul. Boala se poate 
-                        răspândi de la o persoană la alta prin picături mici nazale sau din gură, care sunt răspândite 
-                        atunci când o persoană cu COVID-19 tușește sau expiră. Aceste picături aterizează pe obiecte
-                        și suprafețe din jurul persoanei. Alte persoane pot să contracteze COVID-19 atingând aceste 
-                        obiecte sau suprafețe, apoi atingându-și ochii, nasul sau gura. Oamenii pot, de asemenea, 
-                        să contracteze COVID-19 dacă respiră picături de la o persoană cu COVID-19 care tușește sau 
-                        expiră picături. Acesta este motivul pentru care este important să fie păstrată distanța de 
-                        mai mult de 1 metru de la o persoană bolnavă.
+                        Люди могут заразиться COVID-19 от других людей, у которых есть этот вирус. Болезнь может передаваться от одного человека к другому посредством маленьких капель из носовой или ротовой полости, которые распространяются тогда, когда человек с COVID-19 кашляет или выдыхает. Эти капли осаждаются на предметы и поверхности возле человека. Другие люди могут заразиться COVID-19, прикасаясь к этим предметам или поверхностям и затем трогая свои глаза, нос или рот. Также люди могут заразиться COVID-19 если они вдыхают капли человека с COVID-19, который кашляет или выдыхает эти капли. Это причина, по которой важно соблюдать социальную дистанцию от заболевшего человека минимум в 1 метр.
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Cine este cu risc ca boala să evolueze în una severă?
+                        Кто находится в группе риска по возможности протекания болезни в тяжелой форме?
                     </h4>
                     <p>
-                        În timp ce încă se studiază despre modul în care COVID-2019 afectează oamenii, persoanele 
-                        în vârstă și persoanele cu boli cronice, cum ar fi hipertensiunea arterială, probleme 
-                        cardiace sau diabet, par să dezvolte o boală cu evoluție gravă mai des decât celelalte persoane.
+                       Все еще изучается, какое именно влияние оказывает COVID-19 на людей, но пожилые люди и люди с хроническими заболеваниями сердечно-сосудистой, дыхательной систем и диабетом кажутся более подверженными риску развития болезни в тяжелой форме, чем другие люди.
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Care este perioada de incubație pentru COVID-19?
+                        Какой период инкубации у COVID-19?
                     </h4>
                     <p>
-                        „Perioada de incubație” înseamnă perioada de la contactarea virusului până la  apariția 
-                        simptomelor bolii. Majoritatea estimărilor perioadei de incubație pentru COVID-19 variază 
-                        între 1-14 zile, cel mai frecvent în jurul a cinci zile. Aceste estimări vor fi actualizate 
-                        pe măsură ce vor fi disponibile mai multe date.
+                        Период инкубации означает период с момента контакта с вирусом до появления симптомов заболевания. Большинство определенных периодов инкубации для COVID-19 варьируются в интервале 1-14 дней, самый частый - около 5 дней. Эти числа могут быть обновлены по мере появления новых данных.
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Antibiotice sunt eficiente în prevenirea sau tratarea COVID-19?
+                        Эффективны ли антибиотики в профилактике или в лечении COVID-19?
                     </h4>
                     <p>
-                        Nu. Antibioticele nu funcționează împotriva virusurilor, ci doar împotriva infecțiilor 
-                        bacteriene. COVID-19 este cauzat de un virus, deci antibioticele nu funcționează. 
-                        Antibioticele nu trebuie utilizate ca mijloc de prevenire sau tratament pentru COVID-19. 
-                        Acestea trebuie utilizate doar conform indicațiilor medicului pentru a trata o infecție bacteriană.
+                        Нет. Антибиотики не действуют против вирусов, только против бактериальных инфекций. COVID-19 вызывается вирусом, таким образом, антибиотики не помогают. Антибиотики не должны использоваться как способ предотвращения или лечения COVID-19. Они должны использоваться только в соответствии с медицинским показанием для лечения бактериальной инфекции.
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Există un vaccin, medicament sau tratament pentru COVID-19?
+                        Существует ли вакцина или лекарство от COVID-19?
                     </h4>
                     <p>
-                        Deocamdată nu. Până în prezent, nu există niciun vaccin și niciun medicament antiviral 
-                        specific care să prevină sau să trateze COVID-19. Cu toate acestea, cei afectați ar trebui 
-                        să beneficieze de îngrijire pentru ameliorarea simptomelor. Persoanele cu evoluția bolii 
-                        gravă trebuie spitalizate. Majoritatea pacienților se tratează datorită tratamentului simptomatic.
+                        Пока что нет. На сегодняшний день  не существует никакой вакцины и никакого специального противовирусного лекарства который бы предотвращал или лечил COVID-19. Тем не менее, заболевшим должна оказываться помощь для облегчения симптомов. Люди в тяжелом состоянии должны быть госпитализированы. Большинство пациентов выздоравливают благодаря симптоматическому лечению.
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Ar trebui să port mască pentru a mă proteja?
+                        Должен ли я носить маску, чтобы защититься?
                     </h4>
                     <p>
-                        Persoanele fără simptome respiratorii, cum ar fi tuse, nu trebuie să poarte mască medicală. 
-                        OMS recomandă utilizarea măștilor pentru persoanele care prezintă simptome de COVID-19 și 
-                        pentru persoanele care au grijă de persoane care au simptome, cum ar fi tuse și febră. 
-                        Utilizarea măștilor este crucială pentru lucrătorii medicali și pentru persoanele care au
-                        grijă de cineva (acasă sau într-o instituție medicală).
+                        Люди без симптомов дыхательной системы, например кашля, не должны носить медицинскую маску. ВОЗ рекомендует использовать маски тем, у кого есть симптомы COVID-19 и кто оказывает помощь людям с такими симптомами, как кашель и температура. Использование масок является ключевым для медицинских работников
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Oamenii pot fi infectați cu COVID-19 de la un animal?
+                        Люди могут заразиться COVID-19 от животных?
                     </h4>
                     <p>
-                        Posibile surse animale de COVID-19 nu au fost încă confirmate. Pentru a vă proteja, 
-                        cum ar fi atunci când vizitați piețele de animale vii, evitați contactul direct 
-                        cu animalele și suprafețele aflate în contact cu animalele. Asigurați în permanență 
-                        bune practici de siguranță a alimentelor. Manevrați cu grijă carnea crudă, laptele 
-                        sau organele de origine animală, pentru a evita contaminarea alimentelor necoapte 
-                        și evitați consumul de produse animaliere crude sau nepregătite.
+                        Возможные источники COVID-19 животного происхождения пока не были подтверждены. Чтобы защититься, избегайте прямого контакта с животными и с поверхностями, которые контактируют с этими животными. Постоянно соблюдайте меры по безопасности пищевых продуктов. Аккуратно обращайтесь с сырым мясом, молоком или органами животных во избежание загрязнения сырой пищи, а также старайтесь не употреблять сырую или неприготовленную пищу животного происхождения.
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Cât timp supraviețuiește virusul pe suprafețe?
+                        Сколько времени живет вирус на поверхности?
                     </h4>
                     <p>
-                        Nu este sigur cât timp supraviețuiește virusul care provoacă COVID-19 pe suprafețe, 
-                        dar pare să se comporte ca și alte coronavirusuri. Studiile sugerează că coronavirusurile
-                        (inclusiv informațiile preliminare despre virusul COVID-19) pot persista pe suprafețe 
-                        timp de câteva ore sau până la câteva zile. Aceasta poate varia în condiții diferite 
-                        (de exemplu, tipul de suprafață, temperatura sau umiditatea mediului). Dacă credeți că o suprafață 
-                        poate fi infectată, curățați-o cu un dezinfectant simplu pentru a distruge virusul și pentru a vă 
-                        proteja pe voi și pe ceilalți. Spălați-vă pe mâini cu o soluție de mâini pe bază de alcool sau cu 
-                        săpun și apă. Evitați să vă atingeți ochii, gura sau nasul.
+                        Неизвестно точно, сколько живет на поверхностях вирус, вызывающий COVID-19, но, похоже, он ведет себя как другие коронавирусы. Исследования показывают, что коронавирусы (включая предварительную информацию о COVID-19) могут сохраняться на поверхностях в течение нескольких часов или до нескольких дней. Это время может варьироваться в различных условиях (например, вид поверхности, температура или влажность среды). Если вы подозреваете, что поверхность может быть инфицирована, обработайте ее дезинфектантом для того, чтобы уничтожить вирус и защитить себя и других. Вымойте руки с водой и мылом или используйте раствор на основе спирта. Старайтесь не трогать глаза, нос и рот.
+
                     </p>
                 </div>
                 <div class="question">
                     <h4>
-                        Este sigur să primiți un pachet din orice zonă în care a fost raportat COVID-19?
+                        Безопасно ли получать посылки из зон, в которых было сообщено о случаях COVID-19?
                     </h4>
                     <p>
-                        Da. Probabilitatea ca o persoană infectată să contamineze mărfurile comerciale 
-                        este scăzută, iar riscul de a obține virusul care provoacă COVID-19 dintr-un pachet 
-                        care a fost mutat, a călătorit și a fost expus la diferite condiții și temperatură este, de asemenea, scăzut.
+                        Да. Вероятность того, что инфицированный человек заразит товар, низкая, и риск подцепить вирус COVID-19 из посылки, которую перемещали, перевозили и подвергали различным условиям и температуре, также низкий.
                     </p>
                 </div>
             </div>
 
             <div>
-                <a href="#" class="tap">Vezi toate întrebările</a>
-                <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap red" target="_blank">Pune o întrebare</a>
+                <a href="#" class="tap">Посмотреть все вопросы</a>
+                <a href="https://forms.gle/CuJ8YmYJM9SdXkCG7" class="tap red" target="_blank">Задай вопрос</a>
             </div>
         </div>
     </div>
-
     <div class="section team">
         <div class="container">
             <div class="heading">
                 <h2>
-                    Echipa proiectului
+                    Команда проекта
                 </h2>
             </div>
 
             <div class="content">
                 <p>
-                    Acest proiect este creat si menținut de voluntari care doresc sa facă această lume un loc mai
-                    bun si mai sănătos.
+                    Этот проект создан и поддерживается волонтерами, которые хотят сделать этот мир лучше и здоровее.
                     <br>
-                    Dacă doriți sa luați parte la acest sau alte proiecte vă invităm să vă alăturați nouă.
+                    Если вы хотите поучаствовать в этом или в других проектах, мы приглашаем вас присоединиться к нам!
                 </p>
             </div>
 
             <div class="call_to_action">
-                <a href="https://forms.gle/xvFhSaqQuKQxVMAJ9" class="tap green" target="_blank">Vreau sa mă alătur</a>
+                <a href="https://forms.gle/xvFhSaqQuKQxVMAJ9" class="tap green" target="_blank">Хочу присоединиться</a>
             </div>
 
             <div class="team_grid">
@@ -416,7 +337,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-1.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-1.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Ion Moșnoi
@@ -433,7 +354,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-2.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-2.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Iulian Miniscurta
@@ -450,7 +371,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-3.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-3.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Dumitru Argint
@@ -467,7 +388,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-4.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-4.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Vasile Catana
@@ -485,7 +406,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-5.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-5.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Dumitru Galit
@@ -502,7 +423,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-6.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-6.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Grigore Fiodorov
@@ -519,7 +440,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-7.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-7.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Nicu Lucaș
@@ -536,7 +457,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-8.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-8.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Mihaela Țaranu
@@ -553,7 +474,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-9.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-9.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Corneliu Doni
@@ -570,7 +491,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-10.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-10.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Tatiana Barbova
@@ -587,7 +508,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-11.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-11.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Sergiu Nikro
@@ -604,7 +525,7 @@
                     <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-12.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-12.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Mihaela Mirza
@@ -618,10 +539,10 @@
                             </div>
                         </div>
                     </div>
-                                                                                                                 <div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="team_member">
                             <div class="tm_image">
-                                <img class="team-image" src="images/tm-13.jpg"/>
+                                <img class="team-image" src="newdesign/images/tm-13.jpg"/>
                             </div>
                             <div class="tm_name">
                                 Vladimir Melnic
@@ -640,9 +561,9 @@
         </div>
     </div>
 
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="newdesign/js/jquery.min.js"></script>
+    <script src="newdesign/js/scripts.js"></script>
+    <script src="data.js"></script>
+    <script src="scriptold.js"></script>
 </body>
-</html>
+</htm

@@ -101,7 +101,7 @@
 
           }],
           labels: [
-            "Infectari Locale",
+            "Infectări Locale",
             "Cazuri Importate",
           ]
         },
@@ -136,7 +136,7 @@
           labels: intervalAni,//["January", "February", "March", "April", "May", "June", "July"],
           datasets: [
             {
-              label: "Cazuri confirmate pe ani",
+              label: "Cazuri confirmate pe categoriile de vîrstă",
               data: infectatiAni,
               borderColor: "red",
               borderWidth: "0",
@@ -245,7 +245,7 @@
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            label: "Intrari in tara",
+            label: "Intrări în țară",
             data: data['y_intrate in tara'],//[0, 30, 10, 120, 50, 63, 10],
             backgroundColor: 'transparent',
             borderColor: 'orange',
@@ -254,7 +254,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'orange',
           }, {
-            label: "Monitorizare",
+            label: "Monitorizați la domiciliu",
             data: data['y_monitorzare'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'black',
@@ -263,7 +263,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'black',
           }, {
-            label: "Fise epidemologice",
+            label: "Fișe epidemologice",
             data: data['y_fise epidemologice'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'red',

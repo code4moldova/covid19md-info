@@ -15,7 +15,7 @@ var data = [{"data": "09/03/2020", "ora": "17:00", "infectate": 1, "suspecte": 6
  {"data": "16/03/2020", "ora": "18:00", "infectate": 29, "suspecte": 20, "fise epidemologice": 4400, "monitorzare": 9193, "intrate in tara": 14651, "linia_verde": 95, "decedati": 0, "vindecati": 1},
  {"data": "17/03/2020", "ora": "10:00", "infectate": 29, "suspecte": 43, "fise epidemologice": 3378, "monitorzare": 11238, "intrate in tara": 7990, "linia_verde": 150, "decedati": 0, "vindecati": 1}
 ]
-var lastUpdate = "16/03/2020(18:00)";
+var lastUpdate = "17/03/2020(10:00)";
 
 var intervalAni  = ['0-9','10-19','20-19','30-39','40-49','50-59','60-69'],
 	infectatiAni = [1,      2,     3,     5,       4,      5,      9 ];
