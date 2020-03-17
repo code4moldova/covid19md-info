@@ -18,6 +18,8 @@
     }
   }
   data = d;
+  for (var i in data['y_data'])
+    data['y_data'][i] = data['y_data'][i].split('/2020')[0]
   data['rata_crestere'] = []
   var l = 0;
   for(var i of d['y_infectate']){
