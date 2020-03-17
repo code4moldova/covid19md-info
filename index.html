@@ -1,310 +1,508 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <title>Mobile First Ajax Contact Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Coronavirus COVID-19 in Moldova">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="Coronavirus COVID-19 Moldova">
 
-    <!-- Title Page-->
-    <title>MD COVID-19 Coronavirus</title>
 
-    <!-- Fontfaces CSS-->
-    <link href="CoolAdmin/css/font-face.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/font-awesome-4.7/static/CoolAdmin/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/font-awesome-5/static/CoolAdmin/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/mdi-font/static/CoolAdmin/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
+    <meta data-react-helmet="true" name="description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei."/>
+    <meta data-react-helmet="true" property="og:title" content="Date la zi Covid19 in Moldova"/>
+    <meta data-react-helmet="true" property="og:description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei"/>
+    <meta data-react-helmet="true" property="og:type" content="website"/>
+    <meta data-react-helmet="true" property="og:image" content="covid19-moldova.jpg"/>
+    <meta data-react-helmet="true" name="twitter:card" content="summary"/>
+    <meta data-react-helmet="true" name="twitter:creator" content="Volunteers from Code for Moldova"/>
+    <meta data-react-helmet="true" name="twitter:title" content="Date la zi Covid19 in Moldova"/>
+    <meta data-react-helmet="true" name="twitter:description" content="Platforma ce agrega proiecte contra virusului COVID-19 in contextul Moldovei."/>
 
-    <!-- Bootstrap CSS-->
-    <link href="CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="newdesign/css/main.css">
 
-    <!-- Vendor CSS-->
-    <link href="CoolAdmin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="CoolAdmin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="CoolAdmin/css/theme.css" rel="stylesheet" media="all">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160623102-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160623102-1');
-    </script>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
+<body>
 
-<body class="animsition">
-    <div class="page-wrapper">
-        <!-- HEADER DESKTOP-->
-        
-        <!-- END HEADER MOBILE -->
-
-       
-
-        <!-- PAGE CONTENT-->
-        <div class="page-content--bgf7">
-            <!-- BREADCRUMB-->
-            <section class="au-breadcrumb2">
-                <div class="container">
-                    
-                </div>
-            </section>
-            <!-- END BREADCRUMB-->
-
-            <!-- WELCOME-->
-            <section class="welcome p-t-10">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="title-4">Coronavirus COVID-19
-                                <span>Moldova</span>
-                            </h1>
-                            <hr class="line-seprate">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END WELCOME-->
-
-            <!-- STATISTIC-->
-            <section class="statistic statistic2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--red">
-                                <h2 class="number infectate">{{data.infectate}}</h2>
-                                <span class="desc">Total cazuri confirmate</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-account-o"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--orange">
-                                <h2 class="number suspecte">{{data.suspecte}}</h2>
-                                <span class="desc">Total persoane suspecte</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--green">
-                                <h2 class="number vindecati">{{data.vindecati}}</h2>
-                                <span class="desc">Total persoane vindecate</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-calendar-note"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--red">
-                                <h2 class="number decedati">{{data.decedati}}</h2>
-                                <span class="desc">Total persoane decedate</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-money"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END STATISTIC-->
-
-            <!-- STATISTIC CHART-->
-            <section class="statistic-chart">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="title-5 m-b-35">Statistici</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <!-- CHART-->
-                            <div class="statistic-chart-1">
-                                <h3 class="title-3 m-b-30">Infectati</h3>
-                                <div class="chart-wrap">
-                                    <canvas id="chart1"></canvas>
-                                </div>
-                                
-                            </div>
-                            <!-- END CHART-->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <!-- TOP CAMPAIGN-->
-                            <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Suspecti/Linia verde</h3>
-                                        <canvas id="barChart1"></canvas>
-                                    </div>
-                                </div>
-                            <!-- END TOP CAMPAIGN-->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <!-- CHART PERCENT-->
-                            <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40">Intrati in tara/Monitorizare</h3>
-                                        <canvas id="sales-chart1"></canvas>
-                                    </div>
-                                </div>
-                            <!-- END CHART PERCENT-->
-                        </div>
-                    </div>
-                    <p>Sursa datelor <a href='https://www.facebook.com/protectiesocialamoldova/'>Ministerul Sănătății</a> | Data: <span id='dataup'></span></p>
-                </div>
-            </section>
-            <!-- END STATISTIC CHART-->
-
-           
-            <!-- END DATA TABLE-->
-
-<section class="p-t-20">
-    <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong class="card-title">Cine suntem noi?</strong>
-                  </div>
-
-                  <div class="card-body">
-                    
-                    <div class="typo-articles">
-                      
-                       
-                        <p>C19MD Open Source este comunitatea de voluntari specialiști din diferite domenii (IT, cercetare, comunicare, medicină) care dezvoltă soluțiile IT pentru a ajuta societății în combaterea noului coronavirus. 
-                        Facem ceea ce facem, fiindcă nu suntem indiferenți. Dacă doriți să vă alăturați echipei noastre sau sunteți interesați în colaborare, accesați https://www.facebook.com/groups/c19mdopensource/
-                         </p>
-                        
-                        
-                    </div>
-                    
-
-                </div>
-
-</div>
-              </div>
-            </div>
-          </div>
-        </div>
-</section>
-<section class="p-t-20">            
+    <div id="header" class="header">
+        <div class="header_main flex middle">
             <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-
-
-                <div class="card">
-                  <div class="card-header">
-                    <strong class="card-title">Voluntarii care au participat la dezvoltarea proiectului "Centrul de informare - Coronavirus Moldova"</strong>
-                  </div>
-
-                  <div class="card-body">
-                    
-                    <div class="typo-articles">
-                   
-                        <p>
-                            <ul class="p-3">
-                                <div class="row">
-                                <div class="col-md-6">
-                                    <li>Ion Moșnoi(tech lead)</li>
-                                    <li>Iulian Miniscurta(UX/UI design)</li>
-                                    <li>Dumitru Argint(backend)</li>
-                                    <li>Vasile Catana(backend)</li>
-                                    <li>Dumitru Galit(full stack)</li>
-                                    <li>Grigore Fiodorov(frontend)</li>
-                                    <li>Nicu Lucas(frontend)</li>
-                                </div>
-                                <div class="col-md-6">
-                                    <li>Mihaela Țaranu(cercetare)</li>
-                                    <li>Corneliu Doni(cercetare)</li>
-                                    <li>Tatiana Barbova(cercetare)</li>
-                                    <li>Sergiu Nikro(mentor)</li>
-                                    <li>Mihaela Marza(PM, testare)</li>
-                                    <li>Vladimir Melnic(DevOps)</li>
-                                </div>
-                                </div>
-                            </ul>
-                         </p>
-                        
-                        
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="infoline">
+                            <span class="info_row">telefoane de contact: <a href="tel:112" class="badge white" title="Apeleaza">112</a> ambulanța</span><span class="info_row"><a href="tel:0 800 1230" class="badge green" title="Apeleaza">0 800 1230</a> linia verde</span>
+                        </div>
                     </div>
-                    
-
-                </div>
-
-</div>
-              </div>
-            </div>
-          </div>
-        </div>
-</section>
-
-            <!-- COPYRIGHT-->
-            <section class="p-t-60 p-b-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="copyright">
-                                <p>Creat de <a href="https://www.facebook.com/codeformoldova/">Code 4 Moldova</a>.</p>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="langs">
+                            <a href="#">РУССКИЙ</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- END COPYRIGHT-->
+
+            </div>
         </div>
-
-      
-
-
-
-
     </div>
 
-    <!-- Jquery JS-->
-    <script src="CoolAdmin/vendor/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap JS-->
-    <script src="CoolAdmin/vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    <!-- Vendor JS       -->
-    <script src="CoolAdmin/vendor/slick/slick.min.js">
-    </script>
-    <script src="CoolAdmin/vendor/wow/wow.min.js"></script>
-    <script src="CoolAdmin/vendor/animsition/animsition.min.js"></script>
-    <script src="CoolAdmin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
-    <script src="CoolAdmin/vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="CoolAdmin/vendor/counter-up/jquery.counterup.min.js">
-    </script>
-    <script src="CoolAdmin/vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="CoolAdmin/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="CoolAdmin/vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="CoolAdmin/vendor/select2/select2.min.js">
-    </script>
+    <div class="section intro flex middle">
+        <div class="container">
+            <div class="intro_content">
+                <h1>
+                    CENTRUL DE INFORMARE
+                </h1>
 
-    <!-- Main JS-->
-    <script src="CoolAdmin/js/main.js"></script>
+                <h2>
+                    Coronavirus Moldova
+                </h2>
+
+                <div class="info_url">
+                    INFO.C19.MD
+                </div>
+
+                <div class="numbers flex middle justify responsive">
+                    <div>
+                        <div class="num flex middle spacing mx-2">
+                            <div>
+                                <span class="num_value infectate"></span>
+                            </div>
+                            <div>
+                                <span class="num_desc ">cazuri <br> comfirmate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="num flex middle spacing mx-2">
+                            <div>
+                                <span class="num_value suspecte">43</span>
+                            </div>
+                            <div>
+                                <span class="num_desc">cazuri <br> suspecte</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="num flex middle spacing mx-2">
+                            <div>
+                                <span class="num_value monitorzare">11238</span>
+                            </div>
+                            <div>
+                                <span class="num_desc">persoane <br> monitorizate la domiciliu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="call_to_action">
+                    <a href="datelazi-covid19-md.html" class="tap white">
+                        Vezi cum progresează virusul
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="heading">
+                <h2>
+                    Simptome
+                </h2>
+            </div>
+
+            <div class="clearfix sim_wrap">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="sim_box">
+                            <div class="sim_image"><img src="newdesign/images/s1.svg" alt=""></div>
+                            <div class="sim_title">Febră</div>
+                            <div class="sim_desc">
+                                Des intâlnit (87.9%)
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sim_box">
+                            <div class="sim_image"><img src="newdesign/images/s2.svg" alt=""></div>
+                            <div class="sim_title">Tuse uscată </div>
+                            <div class="sim_desc">
+                                Des intâlnit (67.7%)
+                            </div>                           
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sim_box">
+                            <div class="sim_image"><img src="newdesign/images/s3.svg" alt=""></div>
+                            <div class="sim_title">Oboseală</div>
+                            <div class="sim_desc">
+                                Des intâlnit (38.1%)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div class="sim_box">
+                            <div class="sim_image"><img src="newdesign/images/s3.svg" alt=""></div>
+                            <div class="sim_title text-red">Dificultăți de respirație</div>
+                            <div class="sim_desc">
+                                Uneori intâlnit. Vorbește despre un caz sever
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="sim_box">
+                            <div class="sim_image"><img src="newdesign/images/s2.svg" alt=""></div>
+                            <div class="sim_title">Dureri în gît</div>
+                            <div class="sim_desc">
+                                Uneori intâlnit
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div class="sim_box">
+                            <div class="sim_image"><img src="newdesign/images/s1.svg" alt=""></div>
+                            <div class="sim_title">Nas curgător (rinoree)</div>
+                            <div class="sim_desc">
+                                Rar intâlnit
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="sim_box">
+                            <div class="sim_image"><img src="newdesign/images/s3.svg" alt=""></div>
+                            <div class="sim_title">Pneumonie</div>
+                            <div class="sim_desc">
+                                Rar intâlnit. Vorbește despre un caz sever
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                -->
+            </div>
+
+            <div class="call_to_action">
+                <a href="covid19.html" class="tap">
+                    Afla mai multe despre virus
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section ask">
+        <div class="container">
+            <div class="heading">
+                <h2>
+                    Intrebări și răspunsuri
+                </h2>
+            </div>
+
+            <div class="questions">
+
+                <div class="question">
+                    <h4>
+                        Ce este COVID-19?
+                    </h4>
+                    <p>
+                        COVID-19 este o boală infecțioasă cauzată de coronavirusul recent descoperit. Acest virus, 
+                        precum și boala, au fost necunoscute până la epidemia ce a izbucnit în Wuhan, China, în decembrie 2019.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <h4>
+                        Cum se răspândește COVID-19?
+                    </h4>
+                    <p>
+                        Oamenii se pot infecta cu COVID-19 de la alte persoane care au virusul. Boala se poate 
+                        răspândi de la o persoană la alta prin picături mici nazale sau din gură, care sunt răspândite 
+                        atunci când o persoană cu COVID-19 tușește sau expiră. Aceste picături aterizează pe obiecte
+                        și suprafețe din jurul persoanei. Alte persoane pot să contracteze COVID-19 atingând aceste 
+                        obiecte sau suprafețe, apoi atingându-și ochii, nasul sau gura. Oamenii pot, de asemenea, 
+                        să contracteze COVID-19 dacă respiră picături de la o persoană cu COVID-19 care tușește sau 
+                        expiră picături. Acesta este motivul pentru care este important să fie păstrată distanța de 
+                        mai mult de 1 metru de la o persoană bolnavă.
+                    </p>
+                </div>
+                <div class="question">
+                    <h4>
+                        Cine este cu risc ca boala să evolueze în una severă?
+                    </h4>
+                    <p>
+                        În timp ce încă se studiază despre modul în care COVID-2019 afectează oamenii, persoanele 
+                        în vârstă și persoanele cu boli cronice, cum ar fi hipertensiunea arterială, probleme 
+                        cardiace sau diabet, par să dezvolte o boală cu evoluție gravă mai des decât celelalte persoane.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div>
+                <a href="covid19.html" class="tap">Vezi toate întrebările</a>
+                <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap red" target="_blank">Pune o întrebare</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section team">
+        <div class="container">
+            <div class="heading">
+                <h2>
+                    Echipa proiectului
+                </h2>
+            </div>
+
+            <div class="content">
+                <p>
+                    INFO.C19.MD este un portal informativ cu privire la situația creată de coronavirus în Moldova. Obiectivul nostru este informarea corectă și rapidă a populației, cât și conștientizarea principalelor dificultăți provocate de pandemie. <br> Portalul este un instrument Open Source creat și dezvoltat de către comunitatea Code4md și C19.MD Open Source.Deoarece ne confruntăm cu o situație complet nouă, vom încerca să fim flexibili și să ne adaptăm necesităților. La moment portalul este în process de dezvoltare și în perioada următoare îl vom completa cu date și informații.
+                </p>
+            </div>
+
+            <div class="call_to_action">
+                <a href="https://forms.gle/xvFhSaqQuKQxVMAJ9" class="tap green" target="_blank">Vreau sa mă alătur</a>
+            </div>
+
+            <div class="team_grid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-1.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Ion Moșnoi
+                            </div>
+                            <div class="tm_role">
+                                Tech Lead
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/imosnoi" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/ionmosnoi/" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-2.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Iulian Miniscurta
+                            </div>
+                            <div class="tm_role">
+                                UX/UI design
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/iuliusm" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-3.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Dumitru Argint
+                            </div>
+                            <div class="tm_role">
+                                Backend
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/dumitru.argint" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-4.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Vasile Catana
+                            </div>
+                            <div class="tm_role">
+                                Backend
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/vasile.catana.1" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-5.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Dumitru Galit
+                            </div>
+                            <div class="tm_role">
+                                Full stack
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/galit.dumitru" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-6.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Grigore Fiodorov
+                            </div>
+                            <div class="tm_role">
+                                Frontend
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/grigore.fiodorov" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/grigore-fiodorov-1bb509129/" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-7.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Nicu Lucaș
+                            </div>
+                            <div class="tm_role">
+                                Frontend
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/nicolae.lucas.9" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-8.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Mihaela Țaranu
+                            </div>
+                            <div class="tm_role">
+                                Cercetare
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/mihaela.taranu.52" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/mihaela-taranu/" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-9.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Corneliu Doni
+                            </div>
+                            <div class="tm_role">
+                                Cercetare
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/profile.php?id=100011532555941" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-10.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Tatiana Barbova
+                            </div>
+                            <div class="tm_role">
+                                Cercetare
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/profile.php?id=100014703573007" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/%D1%82%D0%B0%D1%82%D1%8C%D1%8F%D0%BD%D0%B0-%D0%B1%D0%B0%D1%80%D0%B1%D0%BE%D0%B2%D0%B0-040011187/?locale=en_US" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-11.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Sergiu Nikro
+                            </div>
+                            <div class="tm_role">
+                                Mentor
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/nikro.md" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-12.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Mihaela Mirza
+                            </div>
+                            <div class="tm_role">
+                                PM, testare
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/mihaela.mirza" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                                                                                                                 <div class="col-md-3">
+                        <div class="team_member">
+                            <div class="tm_image">
+                                <img class="team-image" src="newdesign/images/tm-13.jpg"/>
+                            </div>
+                            <div class="tm_name">
+                                Vladimir Melnic
+                            </div>
+                            <div class="tm_role">
+                                DevOps
+                            </div>
+                            <div class="tm_socials flex middle center">
+                                <a href="https://www.facebook.com/melnic.vladimir" class="fb" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/melnicv/" class="in" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="newdesign/js/jquery.min.js"></script>
+    <script src="newdesign/js/scripts.js"></script>
     <script src="data.js"></script>
-    <script src="script.js"></script>
-
+    <script src="scriptold.js"></script>
 </body>
-
 </html>
-<!-- end document-->

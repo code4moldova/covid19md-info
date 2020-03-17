@@ -184,7 +184,7 @@
       var nume = window.location.href.split('#')
       nume = nume[nume.length-1];
       var labels = {y_infectate:'Infectati',y_suspecte:"Suspecti",y_vindecati:"Vindecati",y_decedati:'Decedati'}
-      ctx.height = 150;
+      ctx.height = 200;
       var myChart = new Chart(ctx, {
         type: 'bar',
         defaultFontFamily: 'Poppins',
