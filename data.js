@@ -15,3 +15,7 @@ var data = [{"data": "09/03/2020", "ora": "17:00", "infectate": 1, "suspecte": 6
  {"data": "16/03/2020", "ora": "18:00", "infectate": 29, "suspecte": 20, "fise epidemologice": 4400, "monitorzare": 9193, "intrate in tara": 14651, "linia_verde": 95, "decedati": 0, "vindecati": 1}
  ]
 var lastUpdate = "16/03/2020(18:00)";
+
+var intervalAni  = ['0-9','10-19','20-19','30-39','40-49','50-59','60-69'],
+	infectatiAni = [1,      2,     3,     5,       4,      5,      9 ];
+var cazuriImportate = 15, infectariLocale = 14;
