@@ -138,7 +138,7 @@
           labels: intervalAni,//["January", "February", "March", "April", "May", "June", "July"],
           datasets: [
             {
-              label: "Cazuri confirmate pe categoriile de vîrstă",
+              label: "Cazuri confirmate pe vîrstă",
               data: infectatiAni,
               borderColor: "red",
               borderWidth: "0",
