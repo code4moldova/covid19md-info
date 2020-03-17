@@ -387,6 +387,16 @@ h1,h2,h3,h4,h5,h6{
     background: #B2B2B5;
     border-radius: 100%;
 }
+
+.team-image{
+    display: block; 
+    width:  108px;
+    height: 108px;
+    border-radius: 100%;
+    object-fit: cover; 
+    margin: 0 auto;
+}
+
 .tm_name{
     font-size: 17px;
     margin-bottom: 5px;
