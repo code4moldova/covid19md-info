@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei.">
+    <meta name="author" content="codeformoldova">
+    <meta name="keywords" content="Date la zi Covid19 in Moldova">
+
+    <meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
+    <meta data-react-helmet="true" name="description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei."/>
+    <meta data-react-helmet="true" property="og:title" content="Date la zi Covid19 in Moldova"/>
+    <meta data-react-helmet="true" property="og:description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei"/>
+    <meta data-react-helmet="true" property="og:type" content="website"/>
+    <meta data-react-helmet="true" property="og:image" content="covid19-moldova.png"/>
+    <meta data-react-helmet="true" name="twitter:card" content="summary"/>
+    <meta data-react-helmet="true" name="twitter:creator" content="Volunteers from Code for Moldova"/>
+    <meta data-react-helmet="true" name="twitter:title" content="Date la zi Covid19 in Moldova"/>
+    <meta data-react-helmet="true" name="twitter:description" content="Platforma ce agrega proiecte contra virusului COVID-19 in contextul Moldovei."/>
+
+    <!-- Title Page-->
+    <title>Date la zi Covid19 in Moldova</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="CoolAdmin/css/font-face.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/font-awesome-4.7/static/CoolAdmin/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/font-awesome-5/static/CoolAdmin/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/mdi-font/static/CoolAdmin/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="CoolAdmin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="CoolAdmin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="CoolAdmin/css/theme.css" rel="stylesheet" media="all">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160623102-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-160623102-1');
+    </script>
+    <style>
+   
+.flex{
+    display: flex;
+    width: 100%;
+}
+.flex.middle{
+    align-items: center;
+}
+.flex.center{
+    justify-content: center;
+}
+.flex.justify{
+    justify-content: space-between;
+}
+.flex.one > div{
+    width: 100%;
+}
+.flex.two > div{
+    width: 50%;
+}
+.flex.three > div{
+    width: 33.33%;
+}
+.flex.four > div{
+    width: 25%;
+}
+.flex.five > div{
+    width: 20%;
+}
+
+.flex.spacing{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.flex.spacing > div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.flex.large_spacing{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.flex.large_spacing > div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#header{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+#header,
+.header_main{
+    height: 90px;
+}
+
+.section{
+    position: relative;
+    padding: 60px 0;
+}
+.section.intro{
+    color: #fff;
+    min-height: 650px;
+    background: #751112 url("../images/intro.png") 50% 50% / cover no-repeat;
+}
+.section.intro h1{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
+.section.intro h2{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.infoline{
+    font-size: 15px;
+}
+.info_url{
+    background: #DB1C1C;
+    padding: 2px 20px;
+    font-size: 27px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+}
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
+</head>
+
+<body class="animsition">
+    <div id="header" class="header">
+        <div class="header_main flex middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="infoline">
+                            <a href='index_ru.html'>
+                                <div class="info_url">
+                                    INFO.C19.MD
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="langs">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="section intro flex middle" style='min-height: 44px !important;'>
+        <div class="container">
+            <div class="intro_content" >
+                
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <!-- HEADER DESKTOP-->
+        <img src="covid19-moldova.png" alt='covid19 moldova centru de informare' style='display: none;'>
+        <!-- END HEADER MOBILE -->
+
+       
+
+        <!-- PAGE CONTENT-->
+        <div class="page-content--bgf7">
+            <!-- BREADCRUMB-->
+            <section class="au-breadcrumb2">
+                <div class="container">
+                    
+                </div>
+            </section>
+            <!-- END BREADCRUMB-->
+
+            <!-- WELCOME-->
+            <section class="welcome p-t-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href='index.html'>                  
+                
+                                <h1 class="title-4">Covid19 в
+                                    <span>Молдове</span>
+                                </h1>
+                            </a>
+                            <hr class="line-seprate">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END WELCOME-->
+
+            <!-- STATISTIC-->
+            <section class="statistic statistic2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="statistic__item statistic__item--red">
+                                <h2 class="number infectate">{{data.infectate}}</h2>
+                                <span class="desc">Всего подтвержденных случаев</span>
+                                <canvas id="sales-chart2"></canvas>
+                                <div class="icon">
+                                    <i class="zmdi zmdi-account-o"></i>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="statistic__item statistic__item--orange">
+                                <h2 class="number suspecte">{{data.suspecte}}</h2>
+                                <span class="desc">Всего находящихся под подозрением</span>
+                                <canvas id="sales-chart3"></canvas>
+                                <div class="icon">
+                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="statistic__item statistic__item--green">
+                                <h2 class="number vindecati">{{data.vindecati}}</h2>
+                                <span class="desc">Людей вылечилось</span>
+                                <canvas id="sales-chart4"></canvas>
+                                <div class="icon">
+                                    <i class="zmdi zmdi-calendar-note"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="statistic__item statistic__item--red">
+                                <h2 class="number decedati">{{data.decedati}}</h2>
+                                <span class="desc">Всего погибших</span>
+                                <canvas id="sales-chart5"></canvas>
+                                <div class="icon">
+                                    <i class="zmdi zmdi-money"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END STATISTIC-->
+
+            <!-- STATISTIC CHART-->
+            <section class="statistic-chart">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="title-5 m-b-35">Статистика</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- CHART-->
+                            <div class="statistic-chart-1">
+                                
+                                <div class="chart-wrap">
+                                    <canvas id="chart1"></canvas>
+                                </div>
+                                
+                            </div>
+                            <!-- END CHART-->
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        
+                                        <canvas id="doughutChart1"></canvas>
+                                    </div>
+                                </div>
+                            <!-- END CHART PERCENT-->
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <!-- CHART PERCENT-->
+                            <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        
+                                        <canvas id="sales-chart1"></canvas>
+                                    </div>
+                                </div>
+                            <!-- END CHART PERCENT-->
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- TOP CAMPAIGN-->
+                            <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        
+                                        <canvas id="barChart1"></canvas>
+                                    </div>
+                                </div>
+                            <!-- END TOP CAMPAIGN-->
+                        </div>
+                    </div>
+                    <p>Источник данных <a href='https://www.facebook.com/protectiesocialamoldova/'>Министерство Здравоохранения</a> | Дата: <span id='dataup'></span></p>
+                </div>
+            </section>
+            <!-- END STATISTIC CHART-->
+
+           
+            <!-- END DATA TABLE-->
+
+
+            <!-- COPYRIGHT-->
+            <section class="p-t-60 p-b-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>Создано <a href="https://www.facebook.com/codeformoldova/">Code 4 Moldova</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END COPYRIGHT-->
+        </div>
+
+      
+
+
+
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="CoolAdmin/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="CoolAdmin/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="CoolAdmin/vendor/slick/slick.min.js">
+    </script>
+    <script src="CoolAdmin/vendor/wow/wow.min.js"></script>
+    <script src="CoolAdmin/vendor/animsition/animsition.min.js"></script>
+    <script src="CoolAdmin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="CoolAdmin/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="CoolAdmin/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="CoolAdmin/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="CoolAdmin/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="CoolAdmin/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="CoolAdmin/vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="CoolAdmin/js/main.js"></script>
+    <script src="data.js"></script>
+    <script src="scriptold_ru.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
