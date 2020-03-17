@@ -180,12 +180,13 @@ h1,h2,h3,h4,h5,h6{
 
 .section{
     position: relative;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 .section.intro{
     color: #fff;
-    min-height: 650px;
+    min-height: 100px;
     background: #751112 url("../images/intro.png") 50% 50% / cover no-repeat;
+    box-shadow: inset 300px 0 30px -7px rgba(0,0,0,0.7);
 }
 .section.intro h1{
     color: #fff;
@@ -244,10 +245,9 @@ h1,h2,h3,h4,h5,h6{
 .info_url{
     background: #DB1C1C;
     padding: 2px 20px;
-    font-size: 27px;
+    font-size: 15px;
     color: #fff;
     display: inline-block;
-    text-transform: uppercase;
 }
 
 .numbers{
@@ -394,11 +394,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .team-image{
-    display: block; 
+    display: block;
     width:  108px;
     height: 108px;
     border-radius: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     margin: 0 auto;
 }
 
@@ -437,6 +437,68 @@ h1,h2,h3,h4,h5,h6{
 
 .team_grid{
     margin: 60px 0;
+}
+
+.title-container {
+    display: grid;
+    float: left;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.header_buttons {
+    float: right;
+}
+
+.header_button {
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+}
+
+.header_button:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_buttons {
+    margin: 20px 0px;
+}
+
+.footer_button {
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer_button:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+.created_by {
+    font-size: 15px;
+}
+
+.heart {
+    font-weight: bold;
+    color: red;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
 }
 
 
