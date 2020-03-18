@@ -3,7 +3,9 @@ function updateText(byDefault) {
     let locale,
         language,
         langValue,
-        supportLanguages = new Map().set('ru', 'РУССКИЙ').set('ro', "ROMÂNA");
+        supportLanguages = new Map()
+            .set('ru', 'РУССКИЙ')
+            .set('ro', "ROMÂNA");
 
     if (byDefault != null) {
         locale = byDefault;
@@ -15,10 +17,12 @@ function updateText(byDefault) {
 
     let i18n = $.i18n();
     i18n.locale = locale;
-    i18n.load( 'i18n/' + locale + '.json', locale );
+    i18n.load( 'i18n/' + locale + '/' + 'translations.json', locale ).done(function () {
+        $('html').i18n();
+    });
     $('#language').text(supportLanguages.get(locale));
     $('#language').attr("href", "#".concat(locale));
-    Cookies.set('lang', locale, { expires: 7 })
+    Cookies.set('lang', locale, { expires: 7 });
 }
 function getKeyByValue(object, value) {
     'use strict';

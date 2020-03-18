@@ -48,7 +48,15 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="infoline">
-                            <span class="info_row">telefoane de contact: <a href="tel:112" class="badge white" title="Apeleaza">112</a> ambulanța</span><span class="info_row"><a href="tel:0 800 1230" class="badge green" title="Apeleaza">0 800 1230</a> linia verde</span>
+                            <span class="info_row">
+                                <span class="info_row" data-i18n="contact-numbers">
+                                </span>: <a href="tel:112" class="badge white" title="Apeleaza">112</a>
+                                <span data-i18n="ambulanta">
+                                </span>
+                            </span>
+                            <span class="info_row">
+                                <a href="tel:0 800 1230" class="badge green" title="Apeleaza">0 800 1230</a> "<span data-i18n="green-line"></span>"
+                            </span>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -66,13 +74,9 @@
         <div class="container">
             <div class="intro_content">
                 <a href='index.html'>
-                    <h1>
-                        CENTRU DE INFORMARE
-                    </h1>
+                    <h1 data-i18n="information-center"></h1>
 
-                    <h2>
-                        Coronavirus Moldova
-                    </h2>
+                    <h2 data-i18n="coronavirus-moldova"></h2>
 
                     <div class="info_url">
                         INFO.C19.MD
@@ -85,7 +89,7 @@
                                 <span class="num_value infectate"></span>
                             </div>
                             <div>
-                                <span class="num_desc ">cazuri <br> confirmate</span>
+                                <span class="num_desc "><span data-i18n="num-infect-first-word"></span> <br> <span data-i18n="num-infect-second-word"></span>
                             </div>
                         </div>
                     </div>
@@ -95,7 +99,13 @@
                                 <span class="num_value suspecte">43</span>
                             </div>
                             <div>
-                                <span class="num_desc">cazuri <br> suspecte</span>
+                                <span class="num_desc">
+                                    <span data-i18n="num-suspect-first-word">
+                                    </span>
+                                    <br>
+                                    <span data-i18n="num-suspect-second-word">
+                                    </span>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -105,16 +115,19 @@
                                 <span class="num_value monitorzare">11238</span>
                             </div>
                             <div>
-                                <span class="num_desc">persoane <br> monitorizate la domiciliu</span>
+                                <span class="num_desc">
+                                    <span data-i18n="num-pers-monitor-at-home-first-part-of-phrase"></span>
+                                    <br>
+                                    <span data-i18n="num-pers-monitor-at-home-first-second-part-of-phrase">
+                                    </span>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="call_to_action">
-                    <a href="datelazi-covid19-md.html" class="tap white">
-                        Vezi cum progresează virusul
-                    </a>
+                    <a href="datelazi-covid19-md.html" class="tap white" data-i18n="show-progress-of-virus"></a>
                 </div>
 
             </div>
@@ -135,9 +148,7 @@
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s1.svg" alt=""></div>
                             <div class="sim_title">Febră</div>
-                            <div class="sim_desc">
-                                Des intâlnit (87.9%)
-                            </div>
+                            <div class="sim_desc" data-i18n="simptome.febra.des"></div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -302,6 +313,6 @@
     <script src="newdesign/js/scripts.js"></script>
     <script src="data.js"></script>
     <script src="scriptold.js"></script>
-    <script src="./newdesign/js/i18n.infoC19.js"></script>
+    <script src="newdesign/js/this.i18n.js"></script>
 </body>
 </html>
