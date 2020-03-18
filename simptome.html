@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="newdesign/css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="module" src="./newdesign/js/js.cookie.min.js"></script>
+    <script src="./newdesign/js/jquery.i18n.js"></script>
+    <script src="./newdesign/js/jquery.i18n.messagestore.js"></script>
+    <script src="./newdesign/js/jquery.i18n.fallbacks.js"></script>
+    <script src="./newdesign/js/jquery.i18n.parser.js"></script>
+    <script src="./newdesign/js/jquery.i18n.emitter.js"></script>
+    <script src="./newdesign/js/jquery.i18n.language.js"></script>
 </head>
 <body>
 
@@ -26,21 +37,18 @@
                 <div class="container">
                     <div class="intro_content">
                         <dev class="title-container">
-                            <dev class="title">
-                                Centru de informare
-                            </dev>
+                            <dev class="title" data-i18n="information-center"></dev>
                             <a href='index.html'>
-                                <div class="info_url">
-                                    Coronavirus Moldova
+                                <div class="info_url" data-i18n="coronavirus-moldova">
                                 </div>
                             </a>
                         </dev>
 
                         <div class="header_buttons">
-                                <a class="header_button" href="despre.html">Despre</a>
-                                <a class="header_button" href="recomandari.html">Recomandări</a>
-                                <a class="header_button" href="simptome.html">Simptome</a>
-                                <a class="header_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                                <a class="header_button" href="despre.html" data-i18n="about"></a>
+                                <a class="header_button" href="recomandari.html" data-i18n="recommendation"></a>
+                                <a class="header_button" href="simptome.html" data-i18n="symptoms"></a>
+                                <a class="header_button" href="covid19.html" data-i18n="q-and-a"></a>
                         </div>
                     </div>
                 </div>
@@ -49,8 +57,7 @@
     <div class="section">
         <div class="container">
             <div class="heading">
-                <h2>
-                    Simptome
+                <h2 data-i18n="symptoms">
                 </h2>
             </div>
 
@@ -59,18 +66,15 @@
                     <div class="col-md-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s1.svg" alt=""></div>
-                            <div class="sim_title">Febră</div>
-                            <div class="sim_desc">
-                                Des intâlnit (87.9%)
-                            </div>
+                            <div class="sim_title" data-i18n="temp-of-body"></div>
+                            <div class="sim_desc" data-i18n="freq-common"></div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s2.svg" alt=""></div>
-                            <div class="sim_title">Tuse uscată </div>
-                            <div class="sim_desc">
-                                Des intâlnit (67.7%)
+                            <div class="sim_title" data-i18n="dry-cough"></div>
+                            <div class="sim_desc" data-i18n="dry-cough-percent">
                             </div>
                         </div>
 
@@ -78,9 +82,8 @@
                     <div class="col-md-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s3.svg" alt=""></div>
-                            <div class="sim_title">Oboseală</div>
-                            <div class="sim_desc">
-                                Des intâlnit (38.1%)
+                            <div class="sim_title" data-i18n="tiredness"></div>
+                            <div class="sim_desc" data-i18n="tiredness-percent">
                             </div>
                         </div>
                     </div>
@@ -89,28 +92,22 @@
                     <div class="col-md-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s4.svg" alt=""></div>
-                            <div class="sim_title text-red">Dificultăți <br>de respirație</div>
-                            <div class="sim_desc">
-                                Uneori intâlnit
-                            </div>
+                            <div class="sim_title" data-i18n="breath_1"></div><div class="sim_title" data-i18n="breath_2"></div>
+                            <div class="sim_desc" data-i18n="sometimes"> </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s6.svg" alt=""></div>
-                            <div class="sim_title">Dureri în gît</div>
-                            <div class="sim_desc">
-                                Uneori intâlnit
-                            </div>
+                            <div class="sim_title" data-i18n="throat"></div>
+                            <div class="sim_desc" data-i18n="sometimes"> </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s5.svg" alt=""></div>
-                            <div class="sim_title">Nas curgător <br>(rinoree)</div>
-                            <div class="sim_desc">
-                                Rar intâlnit
-                            </div>
+                            <div class="sim_title" data-i18n="nose_1"></div><div class="sim_title" data-i18n="nose_2"></div>
+                            <div class="sim_desc" data-i18n="rare"> </div>
                         </div>
                     </div>
 
@@ -123,24 +120,24 @@
 
     <div class="section footer">
             <div class="footer_buttons">
-                <a class="footer_button" href="despre.html">Despre</a>
-                <a class="footer_button" href="recomandari.html">Recomandări</a>
-                <a class="footer_button" href="simptome.html">Simptome</a>
-                <a class="footer_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                <a class="footer_button" href="despre.html" data-i18n="about"></a>
+                <a class="footer_button" href="recomandari.html" data-i18n="recommendation"></a>
+                <a class="footer_button" href="simptome.html" data-i18n="symptoms"></a>
+                <a class="footer_button" href="covid19.html" data-i18n="q-and-a"></a>
             </div>
             <div class="created_by">
-                creat cu <span class="heart">&#9825;</span> de Code4Moldova
+                <span data-i18n="created-with"></span> <span class="heart">&#9825;</span> <span data-i18n="de-c4md"></span>
             </div>
             <div class="copyright">
-                &#169; 2020 Code for Moldova. Organizație neguvernamentală independentă, neafiliată politic și apolitică
+                &#169; <span data-i18n="copyright"></span>
             </div>
         </div>
 
 
 
-    <script src="newdesign/js/jquery.min.js"></script>
     <script src="newdesign/js/scripts.js"></script>
     <script src="data.js"></script>
     <script src="scriptold.js"></script>
+    <script src="newdesign/js/this.i18n.js"></script>
 </body>
 </html>
