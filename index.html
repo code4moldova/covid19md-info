@@ -22,12 +22,23 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160623102-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-160623102-1');
+        gtag('config', 'UA-160623102-1');
     </script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="module" src="./newdesign/js/js.cookie.min.js"></script>
+    <script src="./newdesign/js/jquery.i18n.js"></script>
+    <script src="./newdesign/js/jquery.i18n.messagestore.js"></script>
+    <script src="./newdesign/js/jquery.i18n.fallbacks.js"></script>
+    <script src="./newdesign/js/jquery.i18n.parser.js"></script>
+    <script src="./newdesign/js/jquery.i18n.emitter.js"></script>
+    <script src="./newdesign/js/jquery.i18n.language.js"></script>
 </head>
 <body>
 
@@ -42,7 +53,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="langs">
-                            <a href="index_ru.html">РУССКИЙ</a>
+                            <a href="#" id="language"></a>
                         </div>
                     </div>
                 </div>
@@ -287,9 +298,10 @@
 
 
 
-    <script src="newdesign/js/jquery.min.js"></script>
+<!--    <script src="newdesign/js/jquery.min.js"></script>-->
     <script src="newdesign/js/scripts.js"></script>
     <script src="data.js"></script>
     <script src="scriptold.js"></script>
+    <script src="./newdesign/js/i18n.infoC19.js"></script>
 </body>
 </html>
