@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="newdesign/css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="module" src="./newdesign/js/js.cookie.min.js"></script>
+    <script src="./newdesign/js/jquery.i18n.js"></script>
+    <script src="./newdesign/js/jquery.i18n.messagestore.js"></script>
+    <script src="./newdesign/js/jquery.i18n.fallbacks.js"></script>
+    <script src="./newdesign/js/jquery.i18n.parser.js"></script>
+    <script src="./newdesign/js/jquery.i18n.emitter.js"></script>
+    <script src="./newdesign/js/jquery.i18n.language.js"></script>
 </head>
 <body>
 
@@ -26,21 +37,18 @@
                 <div class="container">
                     <div class="intro_content">
                         <dev class="title-container">
-                            <dev class="title">
-                                Centru de informare
-                            </dev>
+                            <dev class="title" data-i18n="information-center"></dev>
                             <a href='index.html'>
-                                <div class="info_url">
-                                    Coronavirus Moldova
+                                <div class="info_url" data-i18n="coronavirus-moldova">
                                 </div>
                             </a>
                         </dev>
 
                         <div class="header_buttons">
-                                <a class="header_button" href="despre.html">Despre</a>
-                                <a class="header_button" href="recomandari.html">Recomandări</a>
-                                <a class="header_button" href="simptome.html">Simptome</a>
-                                <a class="header_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                                <a class="header_button" href="despre.html" data-i18n="about"></a>
+                                <a class="header_button" href="recomandari.html" data-i18n="recommendation"></a>
+                                <a class="header_button" href="simptome.html" data-i18n="symptoms"></a>
+                                <a class="header_button" href="covid19.html" data-i18n="q-and-a"></a>
                         </div>
                     </div>
                 </div>
@@ -49,68 +57,38 @@
 <div class="section rec">
         <div class="container">
             <div class="heading">
-                <h2>
-                    Recomandari
-                </h2>
+                <h2 data-i18n="recommendation"></h2>
             </div>
 
             <div class="content">
                 <div class="heading">
-                    <h4>
-                    Igienă
+                    <h4 data-i18n="hygiene">
                     </h4>
                 </div>
                 <ol>
-                    <li>
-                        Spălați-vă cât mai des pe mâini cu apă și săpun sau folosiți o soluție dezinfectantă pe bază de alcool.
-                    </li>
-                    <li>
-                        Acoperiți-vă nasul și gura cu un șervețel sau cu pliul cotului atunci când tușiți sau strănutați. Aruncați imediat șervețelele folosite și spălați-vă pe mâini.
-                    </li>
-                    <li>
-                        Evitați să vă atingeți ochii, nasul sau gura cu mâinile nespălate.
-                    </li>
-                    <li>
-                        Evitați să  transmiteți  unul de la altul pahare, farfurii sau obiecte personale și dezinfectați toate suprăfețele care sunt atinse frecvent. Aerisiți de mai multe ori pe zi încăperile.
-                    </li>
-                    <li>
-                        Gătiți bine carne și ouăle.
-                    </li>
-                    <li>
-                        Evitați contactul neprotejat cu animalele sălbatice și domestice.
-                    </li>
+                    <li data-i18n="hygiene-recommendation-one"></li>
+                    <li data-i18n="hygiene-recommendation-two"></li>
+                    <li data-i18n="hygiene-recommendation-three"></li>
+                    <li data-i18n="hygiene-recommendation-four"></li>
+                    <li data-i18n="hygiene-recommendation-five"></li>
+                    <li data-i18n="hygiene-recommendation-six"></li>
                 </ol>
                 <div class="heading">
-                    <h4>
-                    Comportament social
-                    </h4>
+                    <h4 data-i18n="social_beh">
                 </div>
                 <ol>
-                    <li>
-                        Evitați contactul apropiat cu persoanele care au simptome de gripă și răceală.
-                    </li>
-                    <li>
-                        Evitați pe cât posibil locurile aglomerate și respectați distanța socială de cel puțin 1 metru de la alte persoane.
-                    </li>
-                    <li>
-                        Faceți față stresului și fiți pozitivi! Contactați familia și prietenii, găsiți-vă o ocupație plăcută și informați-vă din surse credibile.
-                    </li>
+                    <li data-i18n="social-rec-one"></li>
+                    <li data-i18n="social-rec-two"></li>
+                    <li data-i18n="social-rec-three"></li>
                 </ol>
                 <div class="heading">
-                    <h4>
-                    Asistență medicală
+                    <h4 data-i18n="med-help">
                     </h4>
                 </div>
                 <ol>
-                    <li>
-                        Rămâneți acasă dacă aveți simptome de gripă sau răceală. Sunați medicul de familie pentru a solicita sfaturi, NU mergeți din primul moment la unitățile de urgență. Există riscul, în cazul în care sunteți purtător al virusului, să transmiteți și altor persoane noul coronavirus.
-                    </li>
-                    <li>
-                        Dacă ați călătorit în zone în care circulă COVID-19 sau ați fost în contact cu o persoană bolnavă, apelați medicului de familie, îl informați despre istoricul călătoriilor. Dacă aveți simptome de COVID-19, solicitați de urgență asistență medicală.
-                    </li>
-                    <li>
-                        Nu recurgeți la auto-medicație.
-                    </li>
+                    <li data-i18n="med-rec-one"></li>
+                    <li data-i18n="med-rec-two"></li>
+                    <li data-i18n="med-rec-three"></li>
                 </ol>
             </div>
         </div>
@@ -118,24 +96,24 @@
 
     <div class="section footer">
             <div class="footer_buttons">
-                <a class="footer_button" href="despre.html">Despre</a>
-                <a class="footer_button" href="recomandari.html">Recomandări</a>
-                <a class="footer_button" href="simptome.html">Simptome</a>
-                <a class="footer_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                <a class="footer_button" href="despre.html" data-i18n="about"></a>
+                <a class="footer_button" href="recomandari.html" data-i18n="recommendation"></a>
+                <a class="footer_button" href="simptome.html" data-i18n="symptoms"></a>
+                <a class="footer_button" href="covid19.html" data-i18n="q-and-a"></a>
             </div>
             <div class="created_by">
-                creat cu <span class="heart">&#9825;</span> de Code4Moldova
+                <span data-i18n="created-with"></span> <span class="heart">&#9825;</span> <span data-i18n="de-c4md"></span>
             </div>
             <div class="copyright">
-                &#169; 2020 Code for Moldova. Organizație neguvernamentală independentă, neafiliată politic și apolitică
+                &#169; <span data-i18n="copyright"></span>
             </div>
         </div>
 
 
 
-    <script src="newdesign/js/jquery.min.js"></script>
     <script src="newdesign/js/scripts.js"></script>
     <script src="data.js"></script>
     <script src="scriptold.js"></script>
+    <script src="newdesign/js/this.i18n.js"></script>
 </body>
 </html>
