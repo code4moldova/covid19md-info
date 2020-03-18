@@ -2,7 +2,11 @@
   "ambulanta": "скорая помощь",
   "contact-numbers": "номера телефонов",
   "coronavirus-moldova": "Coronavirus Moldova",
+  "dry-cough": "Сухой кашель",
+  "dry-cough-percent": "Часто встречается (67.7%)",
+  "freq-common": "Часто встречается (87.9%)",
   "green-line": "горячая линия",
+  "hygiene": "Гигиена",
   "information-center": "ЦЕНТР ИНФОРМИРОВАНИЯ",
   "num-infect-first-word": "подтвержденных",
   "num-infect-second-word": "случаев",
@@ -10,5 +14,11 @@
   "num-pers-monitor-at-home-first-second-part-of-phrase": "находящихся под домашним наблюдением",
   "num-suspect-first-word": "случаев",
   "num-suspect-second-word": "под подозрением",
-  "show-progress-of-virus": "Посмотреть эволюцию ситуации в Молдове"
+  "recommendation": "Рекомендации",
+  "show-all-symptoms": "Посмотреть все симптомы",
+  "show-progress-of-virus": "Посмотреть эволюцию ситуации в Молдове",
+  "symptoms": "Симптомы",
+  "temp-of-body": "Температура",
+  "tiredness": "Усталость",
+  "tiredness-percent": "Часто встречается (38.1%)"
 }

@@ -2,7 +2,11 @@
   "ambulanta": "ambulanța",
   "contact-numbers": "telefoane de contact",
   "coronavirus-moldova": "Coronavirus Moldova",
+  "dry-cough": "Tuse uscată",
+  "dry-cough-percent": "Des intâlnit (67.7%)",
+  "freq-common": "Des intâlnit (87.9%)",
   "green-line": "linia verde",
+  "hygiene": "Igienă",
   "information-center": "CENTRU DE INFORMARE",
   "num-infect-first-word": "cazuri",
   "num-infect-second-word": "confirmate",
@@ -10,5 +14,11 @@
   "num-pers-monitor-at-home-first-second-part-of-phrase": "monitorizate la domiciliu",
   "num-suspect-first-word": "cazuri",
   "num-suspect-second-word": "suspecte",
-  "show-progress-of-virus": "Vezi cum progresează virusul"
+  "recommendation": "Recomandari",
+  "show-all-symptoms": "Vezi toate simptomele",
+  "show-progress-of-virus": "Vezi cum progresează virusul",
+  "symptoms": "Simptome",
+  "temp-of-body": "Febră",
+  "tiredness": "Oboseală",
+  "tiredness-percent": "Des intâlnit (38.1%)"
 }
