@@ -4,8 +4,8 @@ function updateText(byDefault) {
         language,
         langValue,
         supportLanguages = new Map()
-            .set('ru', 'РУССКИЙ')
-            .set('ro', "ROMÂNA");
+            .set('ru', 'ROMÂNA')
+            .set('ro', "РУССКИЙ");
 
     if (byDefault != null) {
         locale = byDefault;
