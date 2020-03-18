@@ -22,4 +22,4 @@ var lastUpdate = "18/03/2020(18:00)";
 
 var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69'],
 	infectatiAni = [1,      2,     3,     5,       4,      6,      9 ];
-var cazuriImportate = 18, infectariLocale = 12;
+var cazuriImportate = 21, infectariLocale = 15;
