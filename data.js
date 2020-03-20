@@ -25,5 +25,5 @@ var data = [{"data": "09/03/2020", "ora": "17:00", "infectate": 1, "suspecte": 6
 var lastUpdate = "20/03/2020(17:20)";
 
 var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69', '70-79'],
-	infectatiAni = [1,      3,     8,     9,       6,      11,      10,      1];
+	infectatiAni = [1,      5,     12,     12,       8,      15,      11,      2];
 var cazuriImportate = 33, infectariLocale = 33;
