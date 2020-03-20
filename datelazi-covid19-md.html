@@ -160,6 +160,17 @@
     <link rel="stylesheet" href="newdesign/css/main1.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="module" src="./newdesign/js/js.cookie.min.js"></script>
+    <script src="./newdesign/js/jquery.i18n.js"></script>
+    <script src="./newdesign/js/jquery.i18n.messagestore.js"></script>
+    <script src="./newdesign/js/jquery.i18n.fallbacks.js"></script>
+    <script src="./newdesign/js/jquery.i18n.parser.js"></script>
+    <script src="./newdesign/js/jquery.i18n.emitter.js"></script>
+    <script src="./newdesign/js/jquery.i18n.language.js"></script>
 </head>
 
 <body class="animsition">
@@ -167,21 +178,18 @@
                 <div class="container">
                     <div class="intro_content">
                         <dev class="title-container">
-                            <dev class="title">
-                                Centru de informare
-                            </dev>
+                            <dev class="title" data-i18n="information-center"></dev>
                             <a href='index.html'>
-                                <div class="info_url">
-                                    Coronavirus Moldova
+                                <div class="info_url" data-i18n="coronavirus-moldova">
                                 </div>
                             </a>
                         </dev>
 
                         <div class="header_buttons">
-                                <a class="header_button" href="despre.html">Despre</a>
-                                <a class="header_button" href="recomandari.html">Recomandări</a>
-                                <a class="header_button" href="simptome.html">Simptome</a>
-                                <a class="header_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                                <a class="header_button" href="despre.html" data-i18n="about"></a>
+                                <a class="header_button" href="recomandari.html" data-i18n="recommendation"></a>
+                                <a class="header_button" href="simptome.html" data-i18n="symptoms"></a>
+                                <a class="header_button" href="covid19.html" data-i18n="q-and-a"></a>
                         </div>
                     </div>
                 </div>
@@ -210,9 +218,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <a href='index.html'>
-
-                                <h1 class="title-4">Covid19 in
-                                    <span>Moldova</span>
+                                <h1 class="title-4" data-i18n="stats-title">
                                 </h1>
                             </a>
                             <hr class="line-seprate">
@@ -229,7 +235,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--red">
                                 <h2 class="number infectate">{{data.infectate}}</h2>
-                                <span class="desc">Total cazuri confirmate</span>
+                                <span class="desc" data-i18n="stats-confirmed"></span>
                                 <canvas id="sales-chart2"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-account-o"></i>
@@ -241,7 +247,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--orange">
                                 <h2 class="number suspecte">{{data.suspecte}}</h2>
-                                <span class="desc">Total persoane suspecte</span>
+                                <span class="desc" data-i18n="stats-susp"></span>
                                 <canvas id="sales-chart3"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-shopping-cart"></i>
@@ -251,7 +257,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--green">
                                 <h2 class="number vindecati">{{data.vindecati}}</h2>
-                                <span class="desc">Total persoane vindecate</span>
+                                <span class="desc" data-i18n="stats-vind"></span>
                                 <canvas id="sales-chart4"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-calendar-note"></i>
@@ -261,7 +267,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--red">
                                 <h2 class="number decedati">{{data.decedati}}</h2>
-                                <span class="desc">Total persoane decedate</span>
+                                <span class="desc" data-i18n="stats-dec"></span>
                                 <canvas id="sales-chart5"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-money"></i>
@@ -278,7 +284,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="title-5 m-b-35">Statistici</h3>
+                            <h3 class="title-5 m-b-35" data-i18n="stats"></h3>
                         </div>
                     </div>
                     <div class="row">
@@ -336,16 +342,16 @@
             <!-- COPYRIGHT-->
             <div class="section footer">
                     <div class="footer_buttons">
-                        <a class="footer_button" href="despre.html">Despre</a>
-                        <a class="footer_button" href="recomandari.html">Recomandări</a>
-                        <a class="footer_button" href="simptome.html">Simptome</a>
-                        <a class="footer_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                        <a class="footer_button" href="despre.html" data-i18n="about"></a>
+                        <a class="footer_button" href="recomandari.html" data-i18n="recommendation"></a>
+                        <a class="footer_button" href="simptome.html" data-i18n="symptoms"></a>
+                        <a class="footer_button" href="covid19.html" data-i18n="q-and-a"></a>
                     </div>
                     <div class="created_by">
-                        creat cu <span class="heart">&#9825;</span> de Code4Moldova
+                        <span data-i18n="created-with"></span> <span class="heart">&#9825;</span> <span data-i18n="de-c4md"></span>
                     </div>
                     <div class="copyright">
-                        &#169; 2020 Code for Moldova. Organizație neguvernamentală independentă, neafiliată politic și apolitică
+                        &#169; <span data-i18n="copyright"></span>
                     </div>
                 </div>
             <!-- END COPYRIGHT-->
@@ -357,9 +363,7 @@
 
 
     </div>
-
-    <!-- Jquery JS-->
-    <script src="CoolAdmin/vendor/jquery-3.2.1.min.js"></script>
+        
     <!-- Bootstrap JS-->
     <script src="CoolAdmin/vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
@@ -383,6 +387,8 @@
     <script src="CoolAdmin/js/main.js"></script>
     <script src="data.js"></script>
     <script src="scriptold.js"></script>
+    <script src="newdesign/js/scripts.js"></script>
+    <script src="newdesign/js/this.i18n.js"></script>
 
 </body>
 

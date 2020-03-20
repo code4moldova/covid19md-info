@@ -15,10 +15,14 @@ var data = [{"data": "09/03/2020", "ora": "17:00", "infectate": 1, "suspecte": 6
  {"data": "16/03/2020", "ora": "18:00", "infectate": 29, "suspecte": 20, "fise epidemologice": 4400, "monitorzare": 9193, "intrate in tara": 14651, "linia_verde": 95, "decedati": 0, "vindecati": 1},
  {"data": "17/03/2020", "ora": "10:00", "infectate": 29, "suspecte": 43, "fise epidemologice": 3378, "monitorzare": 11238, "intrate in tara": 7990, "linia_verde": 150, "decedati": 0, "vindecati": 1},
  {"data": "17/03/2020", "ora": "18:00", "infectate": 30, "suspecte": 40, "fise epidemologice": 3378, "monitorzare": 11238, "intrate in tara": 7990, "linia_verde": 150, "decedati": 0, "vindecati": 1},
- {"data": "18/03/2020", "ora": "10:00", "infectate": 30, "suspecte": 76, "fise epidemologice": 1193, "monitorzare": 13409, "intrate in tara": 3041, "linia_verde": 170, "decedati": 1, "vindecati": 1}
+ {"data": "18/03/2020", "ora": "10:00", "infectate": 30, "suspecte": 76, "fise epidemologice": 1193, "monitorzare": 13409, "intrate in tara": 3041, "linia_verde": 170, "decedati": 1, "vindecati": 1},
+ {"data": "18/03/2020", "ora": "18:00", "infectate": 36, "suspecte": 96, "fise epidemologice": 1193, "monitorzare": 13409, "intrate in tara": 3041, "linia_verde": 170, "decedati": 1, "vindecati": 1},
+ {"data": "19/03/2020", "ora": "10:00", "infectate": 36, "suspecte": 107, "fise epidemologice": 2604, "monitorzare": 17375, "intrate in tara": 2604, "linia_verde": 240, "decedati": 1, "vindecati": 1},
+ {"data": "19/03/2020", "ora": "18:00", "infectate": 49, "suspecte": 108, "fise epidemologice": 2604, "monitorzare": 17375, "intrate in tara": 2604, "linia_verde": 240, "decedati": 1, "vindecati": 1},
+ {"data": "20/03/2020", "ora": "9:00", "infectate": 49, "suspecte": 108, "fise epidemologice": 2604, "monitorzare": 17375, "intrate in tara": 2604, "linia_verde": 240, "decedati": 1, "vindecati": 1}
 ]
-var lastUpdate = "18/03/2020(10:00)";
+var lastUpdate = "20/03/2020(09:00)";
 
-var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69'],
-	infectatiAni = [1,      2,     3,     5,       4,      6,      9 ];
-var cazuriImportate = 18, infectariLocale = 12;
+var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69', '70-79'],
+	infectatiAni = [1,      3,     8,     9,       6,      11,      10,      1];
+var cazuriImportate = 28, infectariLocale = 21;
