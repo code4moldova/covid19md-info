@@ -30,6 +30,10 @@ a {
     transition: all .3s;
 }
 
+.juridic a {
+    display: inline;
+}
+
 a:hover{
     opacity: .8;
     color: #DB1C1C;
