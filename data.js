@@ -26,7 +26,7 @@ var data = [{"ora": "17:00", "intrate in tara": "-", "data": "09/03/2020", "susp
 {"ora": "09:00", "intrate in tara": 1252, "data": "22/03/2020", "suspecte": 102, "linia_verde": 110, "monitorzare": 23938, "decedati": 1, "fise epidemologice": 1252, "infectate": 80, "vindecati": 2},
 {"ora": "06:25", "data": "22/03/2020", "intrate in tara": 1252, "suspecte": 106, "linia_verde": 110, "monitorzare": 23938, "decedati": 1, "fise epidemologice": 1252, "infectate": 80, "vindecati": 2},
 ]; 
- var lastUpdate = "22/03/2020(06:25);"
+ var lastUpdate = "22/03/2020(06:25)";
 
 var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69', '70-79'];
 var infectatiAni = [1,     7,     13,     16,      11,      17,      13,      2];
