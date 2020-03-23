@@ -1,22 +1,6 @@
 (function ($) {
   // USE STRICT
   "use strict";
-  $.i18n().load({
-    'ro': {
-    'zilnic': 'Cazuri confirmate zilnic',
-    },
-    'ru': {
-    'zilnic': 'Ежедневно подтвержденные случаи',
-    }
-  });
-  var label_1 = $.i18n( 'zilnic' );
-  var label_2 = $.i18n( 'locale' );
-  var label_3 = $.i18n( 'importate' );
-  var label_4 = $.i18n( 'varsta' );
-  var label_5 = $.i18n( 'intrari' );
-  var label_6 = $.i18n( 'monitor' );
-  var label_7 = $.i18n( 'fise' );
-
   var  d = {};
   
   for(var k in data[data.length-1]){
@@ -60,7 +44,7 @@
           labels:  data['y_data'],//[['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
           datasets: [
             {
-              label: label_1,
+              label: "Cazuri confirmate zilnic",
               data: data['rata_crestere'],//[78, 81, 80, 64, 65, 80, 70, 75, 67, 85, 66, 68],
               borderColor: "transparent",
               borderWidth: "0",
@@ -118,8 +102,8 @@
 
           }],
           labels: [
-            label_2,
-            label_3,
+            "Infectări Locale",
+            "Cazuri Importate",
           ]
         },
         options: {
@@ -153,7 +137,7 @@
           labels: intervalAni,//["January", "February", "March", "April", "May", "June", "July"],
           datasets: [
             {
-              label: label_4,
+              label: "Cazuri confirmate pe vîrstă",
               data: infectatiAni,
               borderColor: "red",
               borderWidth: "0",
@@ -262,7 +246,7 @@
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            label: label_5,
+            label: "Intrări în țară",
             data: data['y_intrate in tara'],//[0, 30, 10, 120, 50, 63, 10],
             backgroundColor: 'transparent',
             borderColor: 'orange',
@@ -271,7 +255,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'orange',
           }, {
-            label: label_6,
+            label: "Monitorizați la domiciliu",
             data: data['y_monitorzare'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'black',
@@ -280,7 +264,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'black',
           }, {
-            label: label_7,
+            label: "Fișe epidemologice",
             data: data['y_fise epidemologice'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'red',
