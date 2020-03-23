@@ -30,12 +30,8 @@ a {
     transition: all .3s;
 }
 
-.section a {
+.section .content a, .section .questions a {
     display: inline;
-}
-
-.section .call_to_action a {
-    display: inline-block;
 }
 
 a:hover{
