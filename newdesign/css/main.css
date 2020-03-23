@@ -30,6 +30,10 @@ a {
     transition: all .3s;
 }
 
+.section .content a, .section .questions a {
+    display: inline;
+}
+
 a:hover{
     opacity: .8;
     color: #DB1C1C;
@@ -104,7 +108,7 @@ body{
 }
 
 .container{
-    max-width: 980px;
+    max-width: 1046px;
     padding: 0 30px;
 }
 

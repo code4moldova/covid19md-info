@@ -1,2 +1,4 @@
-/i18n/.i18n-editor-metadata
+/newdesign/i18n/.i18n-editor-metadata
 /.idea/
+/node_modules/
+/package-lock.json

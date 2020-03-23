@@ -1,7 +1,6 @@
 (function ($) {
   // USE STRICT
   "use strict";
-
   var  d = {};
   
   for(var k in data[data.length-1]){
