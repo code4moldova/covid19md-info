@@ -10,7 +10,11 @@ app.set('view engine', 'ejs');
 
 app.all('*', function(req, res, next){
   if(req.path.endsWith('.html')){
-      res.redirect(req.path.slice(0, -5));
+    var cur_url = req.path.slice(0, -5);
+    if (cur_url.endsWith('index')) {
+        res.redirect('/');
+    }
+    res.redirect(cur_url);
   } else {
     next();
   }
