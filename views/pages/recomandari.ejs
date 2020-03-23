@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Covid19 Moldova | Centru de informare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta property="og:title" content="Covid19 Moldova | Centru de informare">
+    <meta property="og:description" content="Vizualizarea datelor despre noul Coronavirus Covid19 in contextul Moldovei.">
+    <meta property="og:image" content="https://info.c19.md/covid19-moldova.jpg">
+    <meta property="og:url" content="https://info.c19.md">
+
+
+    <meta name="twitter:card" content="summary"/>
+    <meta  name="twitter:creator" content="Volunteers from Code for Moldova"/>
+    <meta name="twitter:title" content="Date la zi Covid19 in Moldova"/>
+    <meta  name="twitter:description" content="Platforma ce agrega proiecte contra virusului COVID-19 in contextul Moldovei."/>
+
+    <link rel="stylesheet" href="newdesign/css/main.css">
+    <%- include('../partials/static-head'); -%>
+</head>
+<body>
+
+        <div class="section intro flex middle">
+                <div class="container">
+                    <div class="intro_content">
+                        <dev class="title-container">
+                            <dev class="title" data-i18n="information-center"></dev>
+                            <a href='/'>
+                                <div class="info_url" data-i18n="coronavirus-moldova">
+                                </div>
+                            </a>
+                        </dev>
+
+                        <div class="header_buttons">
+                                <a class="header_button" href="despre" data-i18n="about"></a>
+                                <a class="header_button" href="recomandari" data-i18n="recommendation"></a>
+                                <a class="header_button" href="simptome" data-i18n="symptoms"></a>
+                                <a class="header_button" href="covid19" data-i18n="q-and-a"></a>
+                                <a class="header_button" href="juridic" data-i18n="juridic"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="section rec">
+        <div class="container">
+            <div class="heading">
+                <h2 data-i18n="recommendation"></h2>
+            </div>
+
+            <div class="content">
+                <h4 style="color:#f70000; margin-bottom:30px;" data-i18n="recs-auto"></h4>
+                <div class="heading">
+                    <h4 data-i18n="hygiene">
+                    </h4>
+                </div>
+                <ol>
+                    <li data-i18n="hygiene-recommendation-one"></li>
+                    <li data-i18n="hygiene-recommendation-two"></li>
+                    <li data-i18n="hygiene-recommendation-three"></li>
+                    <li data-i18n="hygiene-recommendation-four"></li>
+                    <li data-i18n="hygiene-recommendation-five"></li>
+                    <li data-i18n="hygiene-recommendation-six"></li>
+                </ol>
+                <div class="heading">
+                    <h4 data-i18n="social_beh"></h4>
+                </div>
+                <ol>
+                    <li data-i18n="social-rec-one"></li>
+                    <li data-i18n="social-rec-two"></li>
+                    <li data-i18n="social-rec-three"></li>
+                </ol>
+                <div class="heading">
+                    <h4 data-i18n="med-help">
+                    </h4>
+                </div>
+                <ol>
+                    <li data-i18n="med-rec-one"></li>
+                    <li data-i18n="med-rec-two"></li>
+                    <li data-i18n="med-rec-three"></li>
+                </ol>
+            </div>
+            <%- include('../partials/share-btns'); -%>
+        </div>
+    </div>
+
+    <%- include('../partials/footer'); -%>
+
+    <%- include('../partials/static-footer'); -%>
+</body>
+</html>

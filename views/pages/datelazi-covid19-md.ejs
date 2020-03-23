@@ -164,15 +164,15 @@
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-    <script type="module" src="./newdesign/js/js.cookie.min.js"></script>
-    <script src="./newdesign/js/jquery.i18n.js"></script>
-    <script src="./newdesign/js/jquery.i18n.messagestore.js"></script>
-    <script src="./newdesign/js/jquery.i18n.fallbacks.js"></script>
-    <script src="./newdesign/js/jquery.i18n.parser.js"></script>
-    <script src="./newdesign/js/jquery.i18n.emitter.js"></script>
-    <script src="./newdesign/js/jquery.i18n.language.js"></script>
-    <script src="./newdesign/js/likely.min.js"></script>
-    <link rel="stylesheet" href="./newdesign/css/likely.min.css">
+    <script type="module" src="newdesign/js/js.cookie.min.js"></script>
+    <script src="newdesign/js/jquery.i18n.js"></script>
+    <script src="newdesign/js/jquery.i18n.messagestore.js"></script>
+    <script src="newdesign/js/jquery.i18n.fallbacks.js"></script>
+    <script src="newdesign/js/jquery.i18n.parser.js"></script>
+    <script src="newdesign/js/jquery.i18n.emitter.js"></script>
+    <script src="newdesign/js/jquery.i18n.language.js"></script>
+    <script src="newdesign/js/likely.min.js"></script>
+    <link rel="stylesheet" href="newdesign/css/likely.min.css">
 </head>
 
 <body class="animsition">
@@ -181,18 +181,18 @@
                     <div class="intro_content">
                         <dev class="title-container">
                             <dev class="title" data-i18n="information-center"></dev>
-                            <a href='index.html'>
+                            <a href='/'>
                                 <div class="info_url" data-i18n="coronavirus-moldova">
                                 </div>
                             </a>
                         </dev>
 
                         <div class="header_buttons">
-                                <a class="header_button" href="despre.html" data-i18n="about"></a>
-                                <a class="header_button" href="recomandari.html" data-i18n="recommendation"></a>
-                                <a class="header_button" href="simptome.html" data-i18n="symptoms"></a>
-                                <a class="header_button" href="covid19.html" data-i18n="q-and-a"></a>
-                                <a class="header_button" href="juridic.html" data-i18n="juridic"></a>
+                                <a class="header_button" href="despre" data-i18n="about"></a>
+                                <a class="header_button" href="recomandari" data-i18n="recommendation"></a>
+                                <a class="header_button" href="simptome" data-i18n="symptoms"></a>
+                                <a class="header_button" href="covid19" data-i18n="q-and-a"></a>
+                                <a class="header_button" href="juridic" data-i18n="juridic"></a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@
 
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
-        <img src="covid19-moldova.png" alt='covid19 moldova centru de informare' style='display: none;'>
+        <img src="newdesign/images/covid19-moldova.png" alt='covid19 moldova centru de informare' style='display: none;'>
         <!-- END HEADER MOBILE -->
 
 
@@ -220,7 +220,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <a href='index.html'>
+                            <a href='/'>
                                 <h1 class="title-4" data-i18n="stats-title">
                                 </h1>
                             </a>
@@ -334,15 +334,7 @@
                         </div>
                     </div>
                     <p>Sursa datelor <a href='https://msmps.gov.md/' data-i18n="minister" target="_blank"></a> | <span data-i18n="act"></span><span id='dataup'></span></p>
-                    <div class="likely row">
-                        <div class="linkedin">Link</div>
-                        <div class="twitter">Tweet</div>
-                        <div class="facebook">Share</div>
-                        <div class="vkontakte">Share</div>
-                        <div class="odnoklassniki">Class</div>
-                        <div class="telegram">Send</div>
-                        <div class="whatsapp">Send</div>
-                    </div>
+                    <%- include('../partials/share-btns'); -%>
                 </div>
             </section>
             <!-- END STATISTIC CHART-->
@@ -354,11 +346,11 @@
             <!-- COPYRIGHT-->
             <div class="section footer">
                     <div class="footer_buttons">
-                        <a class="footer_button" href="despre.html" data-i18n="about"></a>
-                        <a class="footer_button" href="recomandari.html" data-i18n="recommendation"></a>
-                        <a class="footer_button" href="simptome.html" data-i18n="symptoms"></a>
-                        <a class="footer_button" href="covid19.html" data-i18n="q-and-a"></a>
-                        <a class="footer_button" href="juridic.html" data-i18n="juridic"></a>
+                        <a class="footer_button" href="despre" data-i18n="about"></a>
+                        <a class="footer_button" href="recomandari" data-i18n="recommendation"></a>
+                        <a class="footer_button" href="simptome" data-i18n="symptoms"></a>
+                        <a class="footer_button" href="covid19" data-i18n="q-and-a"></a>
+                        <a class="footer_button" href="juridic" data-i18n="juridic"></a>
                     </div>
                     <div class="created_by">
                         <span data-i18n="created-with"></span> <span class="heart">&#9825;</span> <span data-i18n="de-c4md"></span>
@@ -398,12 +390,11 @@
 
     <!-- Main JS-->
     <script src="CoolAdmin/js/main.js"></script>
-    <script src="data.js"></script>
-    <script src="scriptold.js"></script>
+    <script src="newdesign/js/data.js"></script>
+    <script src="newdesign/js/scriptold.js"></script>
     <script src="newdesign/js/scripts.js"></script>
     <script src="newdesign/js/this.i18n.js"></script>
 
 </body>
 
 </html>
-<!-- end document-->
