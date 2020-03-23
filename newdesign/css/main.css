@@ -30,7 +30,7 @@ a {
     transition: all .3s;
 }
 
-.team a, .juridic a {
+.section .content a {
     display: inline;
 }
 
