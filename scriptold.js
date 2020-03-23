@@ -1,6 +1,14 @@
 (function ($) {
   // USE STRICT
   "use strict";
+  $.i18n().load({
+    'ro': {
+    'zilnic': 'Cazuri confirmate zilnic',
+    },
+    'ru': {
+    'zilnic': 'Ежедневно подтвержденные случаи',
+    }
+  });
   var label_1 = $.i18n( 'zilnic' );
   var label_2 = $.i18n( 'locale' );
   var label_3 = $.i18n( 'importate' );
