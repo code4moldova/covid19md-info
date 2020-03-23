@@ -1,6 +1,13 @@
 (function ($) {
   // USE STRICT
   "use strict";
+  var label_1 = $.i18n( 'zilnic' );
+  var label_2 = $.i18n( 'locale' );
+  var label_3 = $.i18n( 'importate' );
+  var label_4 = $.i18n( 'varsta' );
+  var label_5 = $.i18n( 'intrari' );
+  var label_6 = $.i18n( 'monitor' );
+  var label_7 = $.i18n( 'fise' );
 
   var  d = {};
   
