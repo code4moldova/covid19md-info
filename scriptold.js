@@ -52,7 +52,7 @@
           labels:  data['y_data'],//[['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
           datasets: [
             {
-              label: "Cazuri confirmate zilnic",
+              label: label_1,
               data: data['rata_crestere'],//[78, 81, 80, 64, 65, 80, 70, 75, 67, 85, 66, 68],
               borderColor: "transparent",
               borderWidth: "0",
@@ -110,8 +110,8 @@
 
           }],
           labels: [
-            "Infectări Locale",
-            "Cazuri Importate",
+            label_2,
+            label_3,
           ]
         },
         options: {
@@ -145,7 +145,7 @@
           labels: intervalAni,//["January", "February", "March", "April", "May", "June", "July"],
           datasets: [
             {
-              label: "Cazuri confirmate pe vîrstă",
+              label: label_4,
               data: infectatiAni,
               borderColor: "red",
               borderWidth: "0",
@@ -254,7 +254,7 @@
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            label: "Intrări în țară",
+            label: label_5,
             data: data['y_intrate in tara'],//[0, 30, 10, 120, 50, 63, 10],
             backgroundColor: 'transparent',
             borderColor: 'orange',
@@ -263,7 +263,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'orange',
           }, {
-            label: "Monitorizați la domiciliu",
+            label: label_6,
             data: data['y_monitorzare'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'black',
@@ -272,7 +272,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'black',
           }, {
-            label: "Fișe epidemologice",
+            label: label_7,
             data: data['y_fise epidemologice'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'red',
