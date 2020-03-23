@@ -30,7 +30,7 @@ a {
     transition: all .3s;
 }
 
-.section .content a {
+.section a:not(.call_to_action) {
     display: inline;
 }
 
