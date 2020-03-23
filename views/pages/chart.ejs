@@ -150,8 +150,8 @@
     <link rel="stylesheet" href="newdesign/css/main1.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
-    <script src="./newdesign/js/likely.min.js"></script>
-    <link rel="stylesheet" href="./newdesign/css/likely.min.css">
+    <script src="newdesign/js/likely.min.js"></script>
+    <link rel="stylesheet" href="newdesign/css/likely.min.css">
 </head>
 
 <body class="animsition">
@@ -162,7 +162,7 @@
                             <dev class="title">
                                 Centru de informare
                             </dev>
-                            <a href='datelazi-covid19-md.html'>
+                            <a href='datelazi-covid19-md'>
                                 <div class="info_url">
                                     Inapoi
                                 </div>
@@ -170,10 +170,10 @@
                         </dev>
 
                         <div class="header_buttons">
-                                <a class="header_button" href="despre.html">Despre</a>
-                                <a class="header_button" href="recomandari.html">Recomandări</a>
-                                <a class="header_button" href="simptome.html">Simptome</a>
-                                <a class="header_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                                <a class="header_button" href="despre">Despre</a>
+                                <a class="header_button" href="recomandari">Recomandări</a>
+                                <a class="header_button" href="simptome">Simptome</a>
+                                <a class="header_button" href="covid19">Întrebări/Răspunsuri</a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <a href='datelazi-covid19-md.html'>
+                            <a href='datelazi-covid19-md'>
 
                                 <h1 class="title-4">Covid19 in
                                     <span>Moldova</span>
@@ -238,15 +238,7 @@
                         </div>
                     </div>
                     <p>Sursa datelor <a href='https://www.facebook.com/protectiesocialamoldova/'>Ministerul Sănătății</a> | Data: <span id='dataup'></span></p>
-                    <div class="likely row">
-                        <div class="linkedin">Link</div>
-                        <div class="twitter">Tweet</div>
-                        <div class="facebook">Share</div>
-                        <div class="vkontakte">Share</div>
-                        <div class="odnoklassniki">Class</div>
-                        <div class="telegram">Send</div>
-                        <div class="whatsapp">Send</div>
-                    </div>
+                    <%- include('../partials/share-btns'); -%>
                 </div>
             </section>
             <!-- END STATISTIC CHART-->
@@ -256,10 +248,10 @@
             <!-- COPYRIGHT-->
             <div class="section footer">
                     <div class="footer_buttons">
-                        <a class="footer_button" href="despre.html">Despre</a>
-                        <a class="footer_button" href="recomandari.html">Recomandări</a>
-                        <a class="footer_button" href="simptome.html">Simptome</a>
-                        <a class="footer_button" href="covid19.html">Întrebări/Răspunsuri</a>
+                        <a class="footer_button" href="despre">Despre</a>
+                        <a class="footer_button" href="recomandari">Recomandări</a>
+                        <a class="footer_button" href="simptome">Simptome</a>
+                        <a class="footer_button" href="covid19">Întrebări/Răspunsuri</a>
                     </div>
                     <div class="created_by">
                         creat cu <span class="heart">&#9825;</span> de Code4Moldova

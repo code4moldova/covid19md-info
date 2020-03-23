@@ -17,7 +17,7 @@ function updateText(byDefault) {
 
     let i18n = $.i18n();
     i18n.locale = locale;
-    i18n.load( 'i18n/' + locale + '/' + 'translations.json', locale ).done(function () {
+    i18n.load( 'newdesign/i18n/' + locale + '/' + 'translations.json', locale ).done(function () {
         $('html').i18n();
     });
     $('#language').text(supportLanguages.get(locale));
