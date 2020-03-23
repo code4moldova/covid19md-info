@@ -17,31 +17,7 @@
     <meta  name="twitter:description" content="Platforma ce agrega proiecte contra virusului COVID-19 in contextul Moldovei."/>
 
     <link rel="stylesheet" href="newdesign/css/main2.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160623102-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-160623102-1');
-    </script>
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script type="module" src="./newdesign/js/js.cookie.min.js"></script>
-    <script src="./newdesign/js/jquery.i18n.js"></script>
-    <script src="./newdesign/js/jquery.i18n.messagestore.js"></script>
-    <script src="./newdesign/js/jquery.i18n.fallbacks.js"></script>
-    <script src="./newdesign/js/jquery.i18n.parser.js"></script>
-    <script src="./newdesign/js/jquery.i18n.emitter.js"></script>
-    <script src="./newdesign/js/jquery.i18n.language.js"></script>
-    <script src="./newdesign/js/likely.min.js"></script>
-    <link rel="stylesheet" href="./newdesign/css/likely.min.css">
-
+    <%- include('../partials/static-head'); -%>
 </head>
 <body>
 
@@ -76,7 +52,7 @@
     <div class="section intro flex middle">
         <div class="container">
             <div class="intro_content">
-                <a href='index.html'>
+                <a href='/'>
                     <h1 data-i18n="information-center"></h1>
 
                     <h2 data-i18n="coronavirus-moldova"></h2>
@@ -130,11 +106,13 @@
                 </div>
 
                 <div class="call_to_action">
-                    <a href="datelazi-covid19-md.html" class="tap white view-progress">
-                        <img class="statistics-icon" src="./newdesign/images/statistics.png"/>
+                    <a href="datelazi-covid19-md" class="tap white view-progress">
+                        <img class="statistics-icon" src="newdesign/images/statistics.png"/>
                         <span data-i18n="show-progress-of-virus" />
                     </a>
+
                 </div>
+    			<!-- <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="push_message()">Test Push Notification</button> -->
 
                 <div style="margin-top: 30px;">
                     <p>
@@ -182,7 +160,7 @@
                 </div>
             </div>
             <div>
-                <a href="simptome.html" class="tap" data-i18n="show-all-symptoms"></a>
+                <a href="simptome" class="tap" data-i18n="show-all-symptoms"></a>
             </div>
         </div>
     </div>
@@ -205,7 +183,7 @@
                 </ol>
             </div>
             <div>
-                <a href="recomandari.html" class="tap" data-i18n="show-all-recommendation"></a>
+                <a href="recomandari" class="tap" data-i18n="show-all-recommendation"></a>
             </div>
         </div>
     </div>
@@ -241,7 +219,7 @@
             </div>
 
             <div>
-                <a href="covid19.html" class="tap" data-i18n="show-all-questions"></a>
+                <a href="covid19" class="tap" data-i18n="show-all-questions"></a>
                 <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap red" target="_blank" data-i18n="ask-a-question"></a>
             </div>
         </div>
@@ -260,10 +238,10 @@
                     <li><p><a href="https://www.legis.md/cautare/getResults?doc_id=120832&lang=ro" target="_blank" data-i18n="parlament2"></a></p></li>
                     </ol>
                 </div>
-            </div> 
-            <div class="call_to_action">
-                    <a href="juridic.html" class="tap" data-i18n="juridic-btn"></a>
-            </div>   
+                <div class="call_to_action">
+                    <a href="juridic" class="tap" data-i18n="juridic-btn"></a>
+                </div>
+            </div>    
         </div>
     </div>
     <div class="section team">
@@ -281,41 +259,15 @@
 
             <div class="call_to_action">
                 <!--<a href="https://forms.gle/xvFhSaqQuKQxVMAJ9" class="tap green" target="_blank">Vreau sa mă alătur</a>-->
-                <a href="despre.html" class="tap" data-i18n="show-team"></a>
+                <a href="despre" class="tap" data-i18n="show-team"></a>
             </div>
-            <div class="likely row">
-                <div class="linkedin">Link</div>
-                <div class="twitter">Tweet</div>
-                <div class="facebook">Share</div>
-                <div class="vkontakte">Share</div>
-                <div class="odnoklassniki">Class</div>
-                <div class="telegram">Send</div>
-                <div class="whatsapp">Send</div>
-            </div>
+            <%- include('../partials/share-btns'); -%>
         </div>
     </div>
-    <div class="section footer">
-            <div class="footer_buttons">
-                <a class="footer_button" href="despre.html" data-i18n="about"></a>
-                <a class="footer_button" href="recomandari.html" data-i18n="recommendation"></a>
-                <a class="footer_button" href="simptome.html" data-i18n="symptoms"></a>
-                <a class="footer_button" href="covid19.html" data-i18n="q-and-a"></a>
-                <a class="footer_button" href="juridic.html" data-i18n="juridic"></a>
-            </div>
-            <div class="created_by">
-                <span data-i18n="created-with"></span> <span class="heart">&#9825;</span> <span data-i18n="de-c4md"></span>
-            </div>
-            <div class="copyright">
-                &#169; <span data-i18n="copyright"></span>
-            </div>
-        </div>
 
+    <%- include('../partials/footer'); -%>
 
+    <%- include('../partials/static-footer'); -%>
 
-<!--    <script src="newdesign/js/jquery.min.js"></script>-->
-    <script src="newdesign/js/scripts.js"></script>
-    <script src="data.js"></script>
-    <script src="scriptold.js"></script>
-    <script src="newdesign/js/this.i18n.js"></script>
 </body>
 </html>

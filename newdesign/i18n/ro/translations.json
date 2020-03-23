@@ -32,8 +32,8 @@
   "juridic-title": "Cadrul Legal cu Referire la COVID-19",
   "juridic-btn": "Vezi mai multe",
   "parlament": "Parlamentul Republicii Moldova",
-  "parlament1": "Hotărîrea Parlamentului nr. 55 din 17 martie 2020 privind declararea stării de urgență",
-  "parlament2": "Legea nr. 212 din 24 iunie 2004 privind regimul stării de urgenţă, de asediu şi de război",
+  "parlament1": "Hotărîrea Parlamentului privind declararea stării de urgență",
+  "parlament2": "Legea privind regimul stării de urgenţă, de asediu şi de război",
   "sit-exc": "Comisia pentru Situații Excepționale a Republicii Moldova",
   "sit-exc1": "Hotărîrea Nr. 1 din 18 martie 2020",
   "sit-exc2": "Hotărîrea Nr. 2 din 20 martie 2020",
@@ -120,12 +120,5 @@
   "vaccin": "Există un vaccin, medicament sau tratament pentru COVID-19?",
   "vaccin-expl": "Deocamdată nu. Până în prezent, nu există niciun vaccin și niciun medicament antiviral specific care să prevină sau să trateze COVID-19. Cu toate acestea, cei afectați ar trebui să beneficieze de îngrijire pentru ameliorarea simptomelor. Persoanele cu evoluția bolii gravă trebuie spitalizate. Majoritatea pacienților se tratează datorită tratamentului simptomatic.",
   "what-is-covid": "Ce este COVID-19?",
-  "what-is-covid-explication": "COVID-19 este o boală infecțioasă cauzată de un nou tip de coronavirus. Acest virus, precum și boala, au fost necunoscute până la epidemia ce a izbucnit în Wuhan, China, în decembrie 2019.",
-  "zilnic": "Cazuri confirmate zilnic",
-  "locale": "Infectări Locale",
-  "importate": "Cazuri Importate",
-  "varsta": "Cazuri confirmate pe vîrstă",
-  "intrari": "Intrări în țară",
-  "monitor": "Monitorizați la domiciliu",
-  "fise": "Fișe epidemologice"
+  "what-is-covid-explication": "COVID-19 este o boală infecțioasă cauzată de un nou tip de coronavirus. Acest virus, precum și boala, au fost necunoscute până la epidemia ce a izbucnit în Wuhan, China, în decembrie 2019."
 }
