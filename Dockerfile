@@ -1,10 +1,11 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 USER root
-WORKDIR /homeapp
-RUN apt-get update
-RUN apt-get -y install curl gnupg
-RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
-RUN apt-get -y install nodejs
+RUN apt-get update -y -qq --fix-missing && \
+    apt-get install -y curl gnupg && \
+    curl -sL https://deb.nodesource.com/setup_12.x  | bash - && \
+    apt-get install -y nodejs
+RUN npm install pm2 -g
+COPY . /app
+WORKDIR /app
 RUN npm install
-#RUN node server.js
-CMD ["/bin/bash"]
+CMD ["pm2-runtime", "server.js"]

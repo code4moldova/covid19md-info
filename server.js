@@ -61,5 +61,8 @@ app.get('/timeline', function(req, res) {
 	res.render('pages/timeline');
 });
 
-app.listen(8882);
-console.log('8882 portul unde se invarte client-ul');
+const host = process.env.NODE_HOST || '0.0.0.0';
+const port = process.env.NODE_PORT || 8882;
+app.listen(port, host, () => {
+	console.log(`Server is running on http://${host}:${port}`);
+});
