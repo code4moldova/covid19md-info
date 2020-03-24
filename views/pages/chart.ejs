@@ -32,17 +32,7 @@
 
     <!-- Main CSS-->
     <link href="CoolAdmin/css/theme.css" rel="stylesheet" media="all">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160623102-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160623102-1');
-    </script>
-
+    <%- include('../partials/static-head'); -%>
     <style>
 
 .flex{
@@ -246,20 +236,8 @@
 
 
             <!-- COPYRIGHT-->
-            <div class="section footer">
-                    <div class="footer_buttons">
-                        <a class="footer_button" href="despre">Despre</a>
-                        <a class="footer_button" href="recomandari">Recomandări</a>
-                        <a class="footer_button" href="simptome">Simptome</a>
-                        <a class="footer_button" href="covid19">Întrebări/Răspunsuri</a>
-                    </div>
-                    <div class="created_by">
-                        creat cu <span class="heart">&#9825;</span> de Code4Moldova
-                    </div>
-                    <div class="copyright">
-                        &#169; 2020 Code for Moldova. Organizație neguvernamentală independentă, neafiliată politic și apolitică
-                    </div>
-                </div>
+                <%- include('../partials/footer'); -%>
+
             <!-- END COPYRIGHT-->
         </div>
 
@@ -270,8 +248,6 @@
 
     </div>
 
-    <!-- Jquery JS-->
-    <script src="CoolAdmin/vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
     <script src="CoolAdmin/vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
@@ -293,8 +269,7 @@
 
     <!-- Main JS-->
     <script src="CoolAdmin/js/main.js"></script>
-    <script src="data.js"></script>
-    <script src="scriptold.js"></script>
+    <%- include('../partials/static-footer'); -%>
 
 </body>
 
