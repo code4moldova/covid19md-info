@@ -1,3 +1,4 @@
+
 @import "bootstrap.min.css";
 @import "font-awesome.min.css";
 
@@ -55,6 +56,7 @@ a:hover{
     font-size: 17px;
     line-height: 40px;
     padding: 0 30px;
+    margin: 0 15px;
     border-radius: 40px;
     color: #575757;
     border: 2px solid #575757;
