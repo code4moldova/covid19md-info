@@ -550,9 +550,6 @@ h1,h2,h3,h4,h5,h6{
     .call_to_action{
         text-align: center;
     }
-    .call_to_action > .tap:not(:last-child){
-        margin-right: 0;
-    }
 
     .heading{
         margin-bottom: 30px;
