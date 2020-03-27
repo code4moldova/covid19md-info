@@ -55,6 +55,12 @@
     </script>
     <style>
 
+@media (max-width: 480px){
+    .au-card {
+        padding: 15px;
+    }
+}
+
 .flex{
     display: flex;
     width: 100%;
@@ -155,6 +161,8 @@
     display: inline-block;
     text-transform: uppercase;
 }
+
+
     </style>
 
     <link rel="stylesheet" href="newdesign/css/main1.css">
@@ -333,7 +341,7 @@
                             <!-- END TOP CAMPAIGN-->
                         </div>
                     </div>
-                    <p>Sursa datelor <a href='https://msmps.gov.md/' data-i18n="minister" target="_blank"></a> | <span data-i18n="act"></span><span id='dataup'></span></p>
+                    <p><span data-i18n="sursa"></span><a href='https://msmps.gov.md/' data-i18n="minister" target="_blank"></a> | <span data-i18n="act"></span><span id='dataup'></span></p>
                     <%- include('../partials/share-btns'); -%>
                 </div>
             </section>
