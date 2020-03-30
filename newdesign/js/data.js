@@ -39,10 +39,11 @@ var data = [{"ora": "17:00", "data": "09/03/2020", "vindecati": 0, "decedati": 0
 {"ora": "18:00", "data": "28/03/2020", "vindecati": 11, "decedati": 2, "monitorzare": 29114, "infectate": 231, "fise epidemologice": 2340, "intrate in tara": 2340, "suspecte": 135, "linia_verde": 207},
 {"ora": "10:00", "data": "29/03/2020", "vindecati": 11, "decedati": 2, "monitorzare": 29191, "infectate": 231, "fise epidemologice": 2361, "intrate in tara": 2361, "suspecte": 110, "linia_verde": 175},
 {"ora": "18:00", "data": "29/03/2020", "vindecati": 13, "decedati": 2, "monitorzare": 29191, "infectate": 263, "fise epidemologice": 2361, "intrate in tara": 2361, "suspecte": 110, "linia_verde": 175},
-{"ora": "10:00", "data": "30/03/2020", "vindecati": 13, "decedati": 2, "monitorzare": 29193, "infectate": 263, "fise epidemologice": 1563, "intrate in tara": 1563, "suspecte": 108, "linia_verde": 181}
+{"ora": "10:00", "data": "30/03/2020", "vindecati": 13, "decedati": 2, "monitorzare": 29193, "infectate": 263, "fise epidemologice": 1563, "intrate in tara": 1563, "suspecte": 108, "linia_verde": 181},
+{"ora": "18:00", "data": "30/03/2020", "vindecati": 15, "decedati": 2, "monitorzare": 29193, "infectate": 298, "fise epidemologice": 1563, "intrate in tara": 1563, "suspecte": 108, "linia_verde": 181}
 ]; 
-var lastUpdate = "30/03/2020(10:00)";
+var lastUpdate = "30/03/2020(18:00)";
 
 var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69', '70-79', '80+'];
-var infectatiAni = [8,     12,     36,     45,      48,      61,      42,      9,     2];
-var cazuriImportate = 59, infectariLocale = 204;
+var infectatiAni = [10,     15,     39,     53,      50,      73,      44,      11,     2];
+var cazuriImportate = 65, infectariLocale = 233;
