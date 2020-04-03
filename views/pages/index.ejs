@@ -28,13 +28,13 @@
                     <div class="col-md-8">
                         <div class="infoline">
                             <span class="info_row">
-                                <span class="info_row" data-i18n="contact-numbers">
+                                <span class="info_row"><%=translation.contact_numbers%>
                                 </span><a href="tel:112" class="badge white" title="Apeleaza">112</a>
-                                <span data-i18n="ambulanta">
+                                <span><%=translation.ambulanta%>
                                 </span>
                             </span>
                             <span class="info_row">
-                                <a href="tel:0 800 12300" class="badge green" title="Apeleaza">0 800 12300</a> "<span data-i18n="green-line"></span>"
+                                <a href="tel:0 800 12300" class="badge green" title="Apeleaza">0 800 12300</a> "<span><%=translation.green_line%></span>"
                             </span>
                         </div>
                     </div>
@@ -53,9 +53,9 @@
         <div class="container">
             <div class="intro_content">
                 <a href='/'>
-                    <h1 data-i18n="information-center"></h1>
+                    <h1><%=translation.information_center%></h1>
 
-                    <h2 data-i18n="coronavirus-moldova"></h2>
+                    <h2><%=translation.coronavirus_moldova%></h2>
 
                     <div class="info_url">
                         INFO.C19.MD
@@ -68,7 +68,7 @@
                                 <span class="num_value infectate"></span>
                             </div>
                             <div>
-                                <span class="num_desc "><span data-i18n="num-infect-first-word"></span> <br> <span data-i18n="num-infect-second-word"> </span></span>
+                                <span class="num_desc "><span><%=translation.num_infect_first_word%></span> <br> <span><%=translation.num_infect_second_word%> </span></span>
                             </div>
                         </div>
                     </div>
@@ -79,10 +79,12 @@
                             </div>
                             <div>
                                 <span class="num_desc">
-                                    <span data-i18n="num-suspect-first-word">
+                                    <span>
+                                        <%=translation.num_suspect_first_word%>
                                     </span>
                                     <br>
-                                    <span data-i18n="num-suspect-second-word">
+                                    <span>
+                                        <%=translation.num_suspect_second_word%>
                                     </span>
                                 </span>
                             </div>
@@ -95,9 +97,9 @@
                             </div>
                             <div>
                                 <span class="num_desc">
-                                    <span data-i18n="num-pers-monitor-at-home-first-part-of-phrase"></span>
+                                    <span><%=translation.num_pers_monitor_at_home_first_part_of_phrase%></span>
                                     <br>
-                                    <span data-i18n="num-pers-monitor-at-home-first-second-part-of-phrase">
+                                    <span><%=translation.num_pers_monitor_at_home_first_second_part_of_phrase%>
                                     </span>
                                 </span>
                             </div>
@@ -108,16 +110,17 @@
                 <div class="call_to_action">
                     <a href="datelazi-covid19-md" class="tap white view-progress">
                         <img class="statistics-icon" src="newdesign/images/statistics.png"/>
-                        <span data-i18n="show-progress-of-virus" />
+                        <span><%=translation.show_progress_of_virus%></span>
                     </a>
-                    <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap white view-progress" target="_blank" data-i18n="ask-a-question">
+                    <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap white view-progress" target="_blank">
+                        <%=translation.ask_a_question%>
                     </a>
                 </div>
     			<!-- <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="push_message()">Test Push Notification</button> -->
 
                 <div style="margin-top: 30px;">
                     <p>
-                        <span data-i18n="act"></span><span id='dataup'></span>
+                        <span><%=translation.act%></span><span id='dataup'></span>
                     </p>
                 </div>
 
@@ -128,7 +131,8 @@
     <div class="section">
         <div class="container">
             <div class="heading">
-                <h2 data-i18n="symptoms">
+                <h2>
+                    <%=translation.symptoms%>
                 </h2>
             </div>
 
@@ -137,54 +141,57 @@
                     <div class="col-sm-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s1.svg" alt=""></div>
-                            <div class="sim_title" data-i18n="temp-of-body"></div>
-                            <div class="sim_desc" data-i18n="freq-common"></div>
+                            <div class="sim_title"><%=translation.temp_of_body%></div>
+                            <div class="sim_desc"><%=translation.freq_common%></div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s2.svg" alt=""></div>
-                            <div class="sim_title" data-i18n="dry-cough"></div>
-                            <div class="sim_desc" data-i18n="dry-cough-percent">
-                            </div>
+                            <div class="sim_title"><%=translation.dry_cough%></div>
+                            <div class="sim_desc"><%=translation.dry_cough_percent%></div>
                         </div>
 
                     </div>
                     <div class="col-sm-4">
                         <div class="sim_box">
                             <div class="sim_image"><img src="newdesign/images/s3.svg" alt=""></div>
-                            <div class="sim_title" data-i18n="tiredness"></div>
-                            <div class="sim_desc" data-i18n="tiredness-percent">
-                            </div>
+                            <div class="sim_title"><%=translation.tiredness%></div>
+                            <div class="sim_desc"><%=translation.tiredness_percent%></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="call_to_action">
-                <a href="simptome" class="tap" data-i18n="show-all-symptoms"></a>
+                <a href="simptome" class="tap"><%=translation.show_all_symptoms%></a>
             </div>
         </div>
     </div>
 <div class="section rec">
         <div class="container">
             <div class="heading">
-                <h2 data-i18n="recommendation"></h2>
+                <h2><%=translation.recommendation%></h2>
             </div>
 
             <div class="content">
-                <h4 style="color:#f70000; margin-bottom:30px;" data-i18n="recs-auto"></h4>
+                <h4 style="color:#f70000; margin-bottom:30px;">
+                    <%=translation.recs_auto%>
+                </h4>
                 <div class="heading">
-                    <h4 data-i18n="hygiene">
+                    <h4>
+                        <%=translation.hygiene%>
                     </h4>
                 </div>
                 <ol>
-                    <li data-i18n="hygiene-recommendation-one"></li>
-                    <li data-i18n="hygiene-recommendation-two"></li>
-                    <li data-i18n="hygiene-recommendation-three"></li>
+                    <li><%=translation.hygiene_recommendation_one%></li>
+                    <li><%=translation.hygiene_recommendation_two%></li>
+                    <li><%=translation.hygiene_recommendation_three%></li>
                 </ol>
             </div>
             <div class="call_to_action">
-                <a href="recomandari" class="tap" data-i18n="show-all-recommendation"></a>
+                <a href="recomandari" class="tap">
+                    <%=translation.show_all_recommendation%>
+                </a>
             </div>
         </div>
     </div>
@@ -192,75 +199,103 @@
     <div class="section ask">
         <div class="container">
             <div class="heading">
-                <h2 data-i18n="q-and-a">
+                <h2 >
+                    <%=translation.q_and_a%>
                 </h2>
             </div>
 
             <div class="questions">
 
                 <div class="question">
-                    <h4 data-i18n="what-is-covid">
+                    <h4>
+                        <%=translation.what_is_covid%>
                     </h4>
-                    <p data-i18n="what-is-covid-explication"></p>
+                    <p>
+                        <%=translation.what_is_covid_explication%>
+                    </p>
                 </div>
 
                 <div class="question">
-                    <h4 data-i18n="cum-se-raspandeste">
+                    <h4>
+                        <%=translation.cum_se_raspandeste%>
                     </h4>
 
-                    <p data-i18n="cum-se-raspandeste-expl">
-
+                    <p>
+                        <%=translation.cum_se_raspandeste_expl%>
                     </p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="risc-la-boala-cine-e"></h4>
-                    <p data-i18n="risc-la-boala-cine-e-expl"></p>
+                    <h4>
+                        <%=translation.risc_la_boala_cine_e%>
+                    </h4>
+                    <p>
+                        <%=translation.risc_la_boala_cine_e_expl%>
+                    </p>
                 </div>
 
             </div>
 
             <div class="call_to_action">
-                <a href="covid19" class="tap" data-i18n="show-all-questions"></a>
-                <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap red" target="_blank" data-i18n="ask-a-question"></a>
+                <a href="covid19" class="tap"><%=translation.show_all_questions%></a>
+                <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap red" target="_blank">
+                    <%=translation.ask_a_question%>
+                </a>
             </div>
         </div>
     </div>
     <div class="section juridic">
         <div class="container">
             <div class="heading">
-                <h2 data-i18n="juridic-title">
+                <h2>
+                    <%=translation.juridic_title%>
                 </h2>
             </div>
             <div class="questions">
                 <div class="question">
-                    <h4 data-i18n="parlament"></h4>
+                    <h4>
+                        <%=translation.parlament%>
+                    </h4>
                     <ol>
-                    <li><p><a href="https://www.legis.md/cautare/getResults?doc_id=120817&lang=ro" target="_blank" data-i18n="parlament1"></a></p></li>
-                    <li><p><a href="https://www.legis.md/cautare/getResults?doc_id=120832&lang=ro" target="_blank" data-i18n="parlament2"></a></p></li>
+                    <li>
+                        <p>
+                            <a href="https://www.legis.md/cautare/getResults?doc_id=120817&lang=ro" target="_blank">
+                                <%=translation.parlament1%>
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="https://www.legis.md/cautare/getResults?doc_id=120832&lang=ro" target="_blank">
+                                <%=translation.parlament2%>
+                            </a>
+                        </p>
+                    </li>
                     </ol>
                 </div>
             </div>
             <div class="call_to_action">
-                <a href="juridic" class="tap" data-i18n="juridic-btn"></a>
+                <a href="juridic" class="tap"><%=translation.juridic_btn%></a>
             </div>    
         </div>
     </div>
     <div class="section team">
         <div class="container">
             <div class="heading">
-                <h2 data-i18n="team-of-project"></h2>
+                <h2>
+                    <%=translation.team_of_project%>
+                </h2>
             </div>
 
             <div class="content">
-                <span data-i18n="info1"></span>
-                <a href='https://msmps.gov.md/' data-i18n="minister" target="_blank"></a>
-                <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019' data-i18n="who" target="_blank"></a>
-                <span data-i18n="info2"></span>
+                <span><%=translation.info1%></span>
+                <a href='https://msmps.gov.md/' target="_blank"><%=translation.minister%></a>
+                <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019' target="_blank"><%=translation.who%></a>
+                <span><%=translation.info2%></span>
             </div>
 
             <div class="call_to_action">
                 <!--<a href="https://forms.gle/xvFhSaqQuKQxVMAJ9" class="tap green" target="_blank">Vreau sa mă alătur</a>-->
-                <a href="despre" class="tap" data-i18n="show-team"></a>
+                <a href="despre" class="tap"><%=translation.show_team%></a>
             </div>
             <%- include('../partials/share-btns'); -%>
         </div>

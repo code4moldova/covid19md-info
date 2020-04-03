@@ -145,38 +145,13 @@
 </head>
 
 <body class="animsition">
-      <div class="section intro flex middle">
-                <div class="container">
-                    <div class="intro_content">
-                        <dev class="title-container">
-                            <dev class="title">
-                                Centru de informare
-                            </dev>
-                            <a href='datelazi-covid19-md'>
-                                <div class="info_url">
-                                    Inapoi
-                                </div>
-                            </a>
-                        </dev>
 
-                        <div class="header_buttons">
-                                <a class="header_button" href="despre">Despre</a>
-                                <a class="header_button" href="recomandari">Recomandări</a>
-                                <a class="header_button" href="simptome">Simptome</a>
-                                <a class="header_button" href="covid19">Întrebări/Răspunsuri</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <%- include('../partials/header'); -%>
 
-    
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
 
         <!-- END HEADER MOBILE -->
-
-
-
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
             <!-- BREADCRUMB-->
@@ -193,9 +168,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <a href='datelazi-covid19-md'>
-
-                                <h1 class="title-4">Covid19 in
-                                    <span>Moldova</span>
+                                <h1 class="title-4">
+                                    <%=translation.stats_title%>
                                 </h1>
                             </a>
                             <hr class="line-seprate">
@@ -213,7 +187,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="title-5 m-b-35">Statistici</h3>
+                            <h3 class="title-5 m-b-35"><%=translation.stats%></h3>
                         </div>
                     </div>
                     <div class="row">
@@ -227,17 +201,14 @@
                             <!-- END CHART PERCENT-->
                         </div>
                     </div>
-                    <p>Sursa datelor <a href='https://www.facebook.com/protectiesocialamoldova/'>Ministerul Sănătății</a> | Data: <span id='dataup'></span></p>
+                    <p><span><%=translation.sursa%></span><a href='https://msmps.gov.md/' target="_blank"><%=translation.minister%></a> | <span><%=translation.act%></span><span id='dataup'></span></p>
                     <%- include('../partials/share-btns'); -%>
                 </div>
             </section>
             <!-- END STATISTIC CHART-->
 
-
-
             <!-- COPYRIGHT-->
                 <%- include('../partials/footer'); -%>
-
             <!-- END COPYRIGHT-->
         </div>
 

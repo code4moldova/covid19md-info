@@ -2,8 +2,10 @@
     "name": "centru-de-informare",
     "main": "server.js",
     "dependencies": {
+        "cookie-parser": "^1.4.5",
         "ejs": "^3.0.1",
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "i18n-express": "^1.1.3"
     },
     "devDependencies": {
         "nodemon": "^2.0.2"

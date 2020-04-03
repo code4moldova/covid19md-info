@@ -1,5 +1,6 @@
 function updateText(byDefault) {
     'use strict';
+
     let locale,
         language,
         langValue,
@@ -15,14 +16,9 @@ function updateText(byDefault) {
         locale = (language[0] === 'ro' ? 'ru' : 'ro');
     }
 
-    let i18n = $.i18n();
-    i18n.locale = locale;
-    i18n.load( 'newdesign/i18n/' + locale + '/' + 'translations.json', locale ).done(function () {
-        $('html').i18n();
-    });
     $('#language').text(supportLanguages.get(locale));
-    $('#language').attr("href", "#".concat(locale));
-    Cookies.set('lang', locale, { expires: 7 });
+    $('#language').attr("href", "?lang=".concat(locale));
+    Cookies.set('clang', locale, { expires: 7 });
 }
 function getKeyByValue(object, value) {
     'use strict';
@@ -37,7 +33,7 @@ $( document ).ready( function ( $ ) {
         updateText('ro');
         Cookies.set("firstLoad", true)
     } else {
-        updateText(Cookies.get("lang"))
+        updateText(Cookies.get("clang"))
     }
 
 } );

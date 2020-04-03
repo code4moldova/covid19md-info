@@ -43,16 +43,6 @@
 
     <!-- Main CSS-->
     <link href="CoolAdmin/css/theme.css" rel="stylesheet" media="all">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160623102-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160623102-1');
-    </script>
     <style>
 
 @media (max-width: 480px){
@@ -166,52 +156,17 @@
     </style>
 
     <link rel="stylesheet" href="newdesign/css/main1.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script type="module" src="newdesign/js/js.cookie.min.js"></script>
-    <script src="newdesign/js/jquery.i18n.js"></script>
-    <script src="newdesign/js/jquery.i18n.messagestore.js"></script>
-    <script src="newdesign/js/jquery.i18n.fallbacks.js"></script>
-    <script src="newdesign/js/jquery.i18n.parser.js"></script>
-    <script src="newdesign/js/jquery.i18n.emitter.js"></script>
-    <script src="newdesign/js/jquery.i18n.language.js"></script>
-    <script src="newdesign/js/likely.min.js"></script>
-    <link rel="stylesheet" href="newdesign/css/likely.min.css">
+    <%- include('../partials/static-head'); -%>
 </head>
 
 <body class="animsition">
-        <div class="section intro flex middle">
-                <div class="container">
-                    <div class="intro_content">
-                        <dev class="title-container">
-                            <dev class="title" data-i18n="information-center"></dev>
-                            <a href='/'>
-                                <div class="info_url" data-i18n="coronavirus-moldova">
-                                </div>
-                            </a>
-                        </dev>
 
-                        <div class="header_buttons">
-                                <a class="header_button" href="despre" data-i18n="about"></a>
-                                <a class="header_button" href="recomandari" data-i18n="recommendation"></a>
-                                <a class="header_button" href="simptome" data-i18n="symptoms"></a>
-                                <a class="header_button" href="covid19" data-i18n="q-and-a"></a>
-                                <a class="header_button" href="juridic" data-i18n="juridic"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <%- include('../partials/header'); -%>
 
-    <div class="page-wrapper">
+    <div class="page">
         <!-- HEADER DESKTOP-->
         <img src="newdesign/images/covid19-moldova.png" alt='covid19 moldova centru de informare' style='display: none;'>
         <!-- END HEADER MOBILE -->
-
-
 
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
@@ -229,7 +184,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <a href='/'>
-                                <h1 class="title-4" data-i18n="stats-title">
+                                <h1 class="title-4">
+                                    <%=translation.stats_title%>
                                 </h1>
                             </a>
                             <hr class="line-seprate">
@@ -246,7 +202,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--red">
                                 <h2 class="number infectate">{{data.infectate}}</h2>
-                                <span class="desc" data-i18n="stats-confirmed"></span>
+                                <span class="desc"><%=translation.stats_confirmed%></span>
                                 <canvas id="sales-chart2"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-account-o"></i>
@@ -258,7 +214,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--orange">
                                 <h2 class="number suspecte">{{data.suspecte}}</h2>
-                                <span class="desc" data-i18n="stats-susp"></span>
+                                <span class="desc"><%=translation.stats_susp%></span>
                                 <canvas id="sales-chart3"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-shopping-cart"></i>
@@ -268,7 +224,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--green">
                                 <h2 class="number vindecati">{{data.vindecati}}</h2>
-                                <span class="desc" data-i18n="stats-vind"></span>
+                                <span class="desc"><%=translation.stats_vind%></span>
                                 <canvas id="sales-chart4"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-calendar-note"></i>
@@ -278,7 +234,7 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="statistic__item statistic__item--red">
                                 <h2 class="number decedati">{{data.decedati}}</h2>
-                                <span class="desc" data-i18n="stats-dec"></span>
+                                <span class="desc"><%=translation.stats_dec%></span>
                                 <canvas id="sales-chart5"></canvas>
                                 <div class="icon">
                                     <i class="zmdi zmdi-money"></i>
@@ -295,7 +251,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="title-5 m-b-35" data-i18n="stats"></h3>
+                            <h3 class="title-5 m-b-35"><%=translation.stats%></h3>
                         </div>
                     </div>
                     <div class="row">
@@ -341,7 +297,7 @@
                             <!-- END TOP CAMPAIGN-->
                         </div>
                     </div>
-                    <p><span data-i18n="sursa"></span><a href='https://msmps.gov.md/' data-i18n="minister" target="_blank"></a> | <span data-i18n="act"></span><span id='dataup'></span></p>
+                    <p><span><%=translation.sursa%></span><a href='https://msmps.gov.md/' target="_blank"><%=translation.minister%></a> | <span><%=translation.act%></span><span id='dataup'></span></p>
                     <%- include('../partials/share-btns'); -%>
                 </div>
             </section>
@@ -352,28 +308,9 @@
 
 
             <!-- COPYRIGHT-->
-            <div class="section footer">
-                    <div class="footer_buttons">
-                        <a class="footer_button" href="despre" data-i18n="about"></a>
-                        <a class="footer_button" href="recomandari" data-i18n="recommendation"></a>
-                        <a class="footer_button" href="simptome" data-i18n="symptoms"></a>
-                        <a class="footer_button" href="covid19" data-i18n="q-and-a"></a>
-                        <a class="footer_button" href="juridic" data-i18n="juridic"></a>
-                    </div>
-                    <div class="created_by">
-                        <span data-i18n="created-with"></span> <span class="heart">&#9825;</span> <span data-i18n="de-c4md"></span>
-                    </div>
-                    <div class="copyright">
-                        &#169; <span data-i18n="copyright"></span>
-                    </div>
-                </div>
+            <%- include('../partials/footer'); -%>
             <!-- END COPYRIGHT-->
         </div>
-
-
-
-
-
 
     </div>
         

@@ -21,64 +21,48 @@
 </head>
 <body>
 
-        <div class="section intro flex middle">
-                <div class="container">
-                    <div class="intro_content">
-                        <dev class="title-container">
-                            <dev class="title" data-i18n="information-center"></dev>
-                            <a href='/'>
-                                <div class="info_url" data-i18n="coronavirus-moldova">
-                                </div>
-                            </a>
-                        </dev>
+    <%- include('../partials/header'); -%>
 
-                        <div class="header_buttons">
-                                <a class="header_button" href="despre" data-i18n="about"></a>
-                                <a class="header_button" href="recomandari" data-i18n="recommendation"></a>
-                                <a class="header_button" href="simptome" data-i18n="symptoms"></a>
-                                <a class="header_button" href="covid19" data-i18n="q-and-a"></a>
-                                <a class="header_button" href="juridic" data-i18n="juridic"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<div class="section rec">
+    <div class="section rec">
         <div class="container">
             <div class="heading">
-                <h2 data-i18n="recommendation"></h2>
+                <h2><%=translation.recommendation%></h2>
             </div>
 
             <div class="content">
-                <h4 style="color:#f70000; margin-bottom:30px;" data-i18n="recs-auto"></h4>
+                <h4 style="color:#f70000; margin-bottom:30px;">
+                    <%=translation.recs_auto%>
+                </h4>
                 <div class="heading">
-                    <h4 data-i18n="hygiene">
+                    <h4>
+                        <%=translation.hygiene%>
                     </h4>
                 </div>
                 <ol>
-                    <li data-i18n="hygiene-recommendation-one"></li>
-                    <li data-i18n="hygiene-recommendation-two"></li>
-                    <li data-i18n="hygiene-recommendation-three"></li>
-                    <li data-i18n="hygiene-recommendation-four"></li>
-                    <li data-i18n="hygiene-recommendation-five"></li>
-                    <li data-i18n="hygiene-recommendation-six"></li>
+                    <li><%=translation.hygiene_recommendation_one%></li>
+                    <li><%=translation.hygiene_recommendation_two%></li>
+                    <li><%=translation.hygiene_recommendation_three%></li>
+                    <li><%=translation.hygiene_recommendation_four%></li>
+                    <li><%=translation.hygiene_recommendation_five%></li>
+                    <li><%=translation.hygiene_recommendation_six%></li>
                 </ol>
                 <div class="heading">
-                    <h4 data-i18n="social_beh"></h4>
+                    <h4><%=translation.social_beh%></h4>
                 </div>
                 <ol>
-                    <li data-i18n="social-rec-one"></li>
-                    <li data-i18n="social-rec-two"></li>
-                    <li data-i18n="social-rec-three"></li>
+                    <li><%=translation.social_rec_one%></li>
+                    <li><%=translation.social_rec_two%></li>
+                    <li><%=translation.social_rec_three%></li>
                 </ol>
                 <div class="heading">
-                    <h4 data-i18n="med-help">
+                    <h4>
+                        <%=translation.med_help%>
                     </h4>
                 </div>
                 <ol>
-                    <li data-i18n="med-rec-one"></li>
-                    <li data-i18n="med-rec-two"></li>
-                    <li data-i18n="med-rec-three"></li>
+                    <li><%=translation.med_rec_one%></li>
+                    <li><%=translation.med_rec_two%></li>
+                    <li><%=translation.med_rec_three%></li>
                 </ol>
             </div>
             <%- include('../partials/share-btns'); -%>

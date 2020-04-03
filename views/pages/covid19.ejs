@@ -19,29 +19,7 @@
 
     <link rel="stylesheet" href="newdesign/css/main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160623102-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-160623102-1');
-    </script>
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script type="module" src="newdesign/js/js.cookie.min.js"></script>
-    <script src="newdesign/js/jquery.i18n.js"></script>
-    <script src="newdesign/js/jquery.i18n.messagestore.js"></script>
-    <script src="newdesign/js/jquery.i18n.fallbacks.js"></script>
-    <script src="newdesign/js/jquery.i18n.parser.js"></script>
-    <script src="newdesign/js/jquery.i18n.emitter.js"></script>
-    <script src="newdesign/js/jquery.i18n.language.js"></script>
-    <script src="newdesign/js/likely.min.js"></script>
-    <link rel="stylesheet" href="newdesign/css/likely.min.css">
+    <%- include('../partials/static-head'); -%>
 </head>
 <body>
 
@@ -50,68 +28,86 @@
     <div class="section ask">
         <div class="container">
             <div class="heading">
-                <h2 data-i18n="q-and-a">
+                <h2>
+                    <%=translation.q_and_a%>
                 </h2>
             </div>
             <div class="questions">
 
                 <div class="question">
-                    <h4 data-i18n="what-is-covid">
+                    <h4>
+                        <%=translation.what_is_covid%>
                     </h4>
-                    <p data-i18n="what-is-covid-explication"></p>
+                    <p>
+                        <%=translation.what_is_covid_explication%>
+                    </p>
                 </div>
 
                 <div class="question">
-                    <h4 data-i18n="cum-se-raspandeste">
+                    <h4>
+                        <%=translation.cum_se_raspandeste%>
                     </h4>
-                    <p data-i18n="cum-se-raspandeste-expl">
+                    <p>
+                        <%=translation.cum_se_raspandeste_expl%>
                     </p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="risc-la-boala-cine-e"></h4>
-                    <p data-i18n="risc-la-boala-cine-e-expl"></p>
+                    <h4>
+                        <%=translation.risc_la_boala_cine_e%>
+                    </h4>
+                    <p>
+                        <%=translation.risc_la_boala_cine_e_expl%>
+                    </p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="period-inc"></h4>
-                    <p data-i18n="period-inc-expl"></p>
+                    <h4>
+                        <%=translation.period_inc%>
+                    </h4>
+                    <p>
+                        <%=translation.period_inc_expl%>
+                    </p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="suprafete"></h4>
-                    <p data-i18n="suprafete-expl"></p>
+                    <h4>
+                        <%=translation.suprafete%>
+                    </h4>
+                    <p>
+                        <%=translation.suprafete_expl%>
+                    </p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="antibiotics"></h4>
-                    <p data-i18n="antibiotics-expl"></p>
+                    <h4><%=translation.antibiotics%></h4>
+                    <p><%=translation.antibiotics_expl%></p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="vaccin"></h4>
-                    <p data-i18n="vaccin-expl"></p>
+                    <h4><%=translation.vaccin%></h4>
+                    <p><%=translation.vaccin_expl%></p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="masca"></h4>
-                    <p data-i18n="masca-expl"></p>
+                    <h4><%=translation.masca%></h4>
+                    <p><%=translation.masca_expl%></p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="animale"></h4>
-                    <p data-i18n="animale-expl"></p>
+                    <h4><%=translation.animale%></h4>
+                    <p><%=translation.animale_expl%></p>
                 </div>
 
                 <div class="question">
-                    <h4 data-i18n="pachete"></h4>
-                    <p data-i18n="pachete-expl"></p>
+                    <h4><%=translation.pachete%></h4>
+                    <p><%=translation.pachete_expl%></p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="ulei"></h4>
-                    <p data-i18n="ulei-expl"></p>
+                    <h4><%=translation.ulei%></h4>
+                    <p><%=translation.ulei_expl%></p>
                 </div>
                 <div class="question">
-                    <h4 data-i18n="usturoi"></h4>
-                    <p data-i18n="usturoi-expl"></p>
+                    <h4><%=translation.usturoi%></h4>
+                    <p><%=translation.usturoi_expl%></p>
                 </div>
             </div>
 
             <div>
-                <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap red" target="_blank" data-i18n="ask-a-question"></a>
+                <a href="https://forms.gle/MeapxYvZP1MeZHzA9" class="tap red" target="_blank"><%=translation.ask_a_question%></a>
             </div>
             <%- include('../partials/share-btns'); -%>
         </div>
