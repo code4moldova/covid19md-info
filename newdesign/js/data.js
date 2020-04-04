@@ -48,9 +48,9 @@ var data = [{"ora": "17:00", "data": "09/03/2020", "vindecati": 0, "decedati": 0
 {"ora": "18:00", "data": "02/04/2020", "vindecati": 26, "decedati": 6, "monitorzare": 35553, "infectate": 505, "fise epidemologice": 1836, "intrate in tara": 1836, "suspecte": 192, "linia_verde": 181},
 {"ora": "18:00", "data": "03/04/2020", "vindecati": 26, "decedati": 8, "monitorzare": 35553, "infectate": 591, "fise epidemologice": 2097, "intrate in tara": 2097, "suspecte": 192, "linia_verde": 181},
 {"ora": "10:00", "data": "04/04/2020", "vindecati": 27, "decedati": 9, "monitorzare": 36558, "infectate": 591, "fise epidemologice": 1944, "intrate in tara": 1944, "suspecte": 190, "linia_verde": 181},
-{"ora": "10:00", "data": "04/04/2020", "vindecati": 29, "decedati": 12, "monitorzare": 36558, "infectate": 752, "fise epidemologice": 1944, "intrate in tara": 1944, "suspecte": 190, "linia_verde": 181}            
+{"ora": "18:00", "data": "04/04/2020", "vindecati": 29, "decedati": 12, "monitorzare": 36558, "infectate": 752, "fise epidemologice": 1944, "intrate in tara": 1944, "suspecte": 190, "linia_verde": 181}            
 ]; 
-var lastUpdate = "04/04/2020(10:00)";
+var lastUpdate = "04/04/2020(18:00)";
 
 var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69', '70-79', '80+'];
 var infectatiAni = [17,     31,     66,     109,      98,      145,      91,      30,     3];
