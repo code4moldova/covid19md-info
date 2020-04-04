@@ -47,7 +47,7 @@ var data = [{"ora": "17:00", "data": "09/03/2020", "vindecati": 0, "decedati": 0
 {"ora": "18:00", "data": "01/04/2020", "vindecati": 22, "decedati": 4, "monitorzare": 25529, "infectate": 423, "fise epidemologice": 1836, "intrate in tara": 1836, "suspecte": 67, "linia_verde": 181},
 {"ora": "18:00", "data": "02/04/2020", "vindecati": 26, "decedati": 6, "monitorzare": 35553, "infectate": 505, "fise epidemologice": 1836, "intrate in tara": 1836, "suspecte": 192, "linia_verde": 181},
 {"ora": "18:00", "data": "03/04/2020", "vindecati": 26, "decedati": 8, "monitorzare": 35553, "infectate": 591, "fise epidemologice": 2097, "intrate in tara": 2097, "suspecte": 192, "linia_verde": 181},
-{"ora": "10:00", "data": "04/04/2020", "vindecati": 26, "decedati": 9, "monitorzare": 36558, "infectate": 591, "fise epidemologice": 1836, "intrate in tara": 1836, "suspecte": 192, "linia_verde": 181}
+{"ora": "10:00", "data": "04/04/2020", "vindecati": 26, "decedati": 9, "monitorzare": 36558, "infectate": 591, "fise epidemologice": 1836, "intrate in tara": 1836, "suspecte": 190, "linia_verde": 181}
 ]; 
 var lastUpdate = "04/04/2020(10:00)";
 
