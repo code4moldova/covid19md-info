@@ -16,3 +16,23 @@
 
 <script src="newdesign/js/likely.min.js"></script>
 <link rel="stylesheet" href="newdesign/css/likely.min.css">
+<script>
+    var i18n = <%-JSON.stringify(
+            {"chart_translations": [
+                    translation.daily_cases_confirmed,
+                    translation.locale_infection,
+                    translation.imported_cases,
+                    translation.confirmed_cases_by_age,
+                    translation.infected_humans,
+                    translation.suspected_humans,
+                    translation.vindicated_humans,
+                    translation.decedated_humans,
+                    translation.entreis_to_country,
+                    translation.in_country,
+                    translation.epidemiological_files,
+                    translation.epidemological,
+                    translation.monitor_at_home
+                ]
+            })%>;
+    console.log(i18n);
+</script>

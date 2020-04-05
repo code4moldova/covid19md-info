@@ -128,5 +128,18 @@
   "vaccin": "Există un vaccin, medicament sau tratament pentru COVID-19?",
   "vaccin_expl": "Deocamdată nu. Până în prezent, nu există niciun vaccin și niciun medicament antiviral specific care să prevină sau să trateze COVID-19. Cu toate acestea, cei afectați ar trebui să beneficieze de îngrijire pentru ameliorarea simptomelor. Persoanele cu evoluția bolii gravă trebuie spitalizate. Majoritatea pacienților se tratează datorită tratamentului simptomatic.",
   "what_is_covid": "Ce este COVID-19?",
-  "what_is_covid_explication": "COVID-19 este o boală infecțioasă cauzată de un nou tip de coronavirus. Acest virus, precum și boala, au fost necunoscute până la epidemia ce a izbucnit în Wuhan, China, în decembrie 2019."
+  "what_is_covid_explication": "COVID-19 este o boală infecțioasă cauzată de un nou tip de coronavirus. Acest virus, precum și boala, au fost necunoscute până la epidemia ce a izbucnit în Wuhan, China, în decembrie 2019.",
+  "daily_cases_confirmed": "Cazuri confirmate zilnic",
+  "locale_infection": "Infectări Locale",
+  "imported_cases": "Cazuri Importate",
+  "confirmed_cases_by_age": "Cazuri confirmate pe vîrstă",
+  "infected_humans": "Infectati",
+  "suspected_humans": "Suspecti",
+  "vindicated_humans": "Vindecati",
+  "decedated_humans": "Decedati",
+  "entreis_to_country": "Intrări în țară",
+  "in_country": "in țară",
+  "epidemiological_files": "Fișe epidemiologice",
+  "monitor_at_home": "Monitorizați la domiciliu",
+  "epidemological": "epidemiologice"
 }

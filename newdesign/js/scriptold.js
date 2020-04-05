@@ -44,7 +44,7 @@
           labels:  data['y_data'],//[['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
           datasets: [
             {
-              label: "Cazuri confirmate zilnic",
+              label: i18n.chart_translations[0],
               data: data['rata_crestere'],//[78, 81, 80, 64, 65, 80, 70, 75, 67, 85, 66, 68],
               borderColor: "transparent",
               borderWidth: "0",
@@ -102,8 +102,8 @@
 
           }],
           labels: [
-            "Infectări Locale",
-            "Cazuri Importate",
+            i18n.chart_translations[1],
+            i18n.chart_translations[2],
           ]
         },
         options: {
@@ -137,7 +137,7 @@
           labels: intervalAni,//["January", "February", "March", "April", "May", "June", "July"],
           datasets: [
             {
-              label: "Cazuri confirmate pe vîrstă",
+              label: i18n.chart_translations[3],
               data: infectatiAni,
               borderColor: "red",
               borderWidth: "0",
@@ -184,7 +184,7 @@
     if (ctx) {
       var nume = window.location.href.split('#')
       nume = nume[nume.length-1];
-      var labels = {y_infectate:'Infectati',y_suspecte:"Suspecti",y_vindecati:"Vindecati",y_decedati:'Decedati'}
+      var labels = {y_infectate:i18n.chart_translations[4],y_suspecte:i18n.chart_translations[5],y_vindecati:i18n.chart_translations[6],y_decedati:i18n.chart_translations[7]}
       ctx.height = 200;
       var myChart = new Chart(ctx, {
         type: 'bar',
@@ -246,7 +246,7 @@
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            label: "Intrări în țară",
+            label: i18n.chart_translations[8],
             data: data['y_intrate in tara'],//[0, 30, 10, 120, 50, 63, 10],
             backgroundColor: 'transparent',
             borderColor: 'orange',
@@ -255,7 +255,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'orange',
           }, {
-            label: "Monitorizați la domiciliu",
+            label: i18n.chart_translations[12],
             data: data['y_monitorzare'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'black',
@@ -264,7 +264,7 @@
             pointBorderColor: 'transparent',
             pointBackgroundColor: 'black',
           }, {
-            label: "Fișe epidemologice",
+            label: i18n.chart_translations[10],
             data: data['y_fise epidemologice'],//[0, 50, 40, 80, 40, 79, 120],
             backgroundColor: 'transparent',
             borderColor: 'red',
@@ -425,9 +425,9 @@ function plotsmall(canvas, label, key){
     console.log(error);
   }
 }
-plotsmall("sales-chart2", "Infectati", 'y_infectate')
-plotsmall("sales-chart3", "Suspecti", 'y_suspecte')
-plotsmall("sales-chart4", "Vindecati", 'y_vindecati')
-plotsmall("sales-chart5", "Decedati", 'y_decedati')
+plotsmall("sales-chart2", i18n.chart_translations[4], 'y_infectate')
+plotsmall("sales-chart3", i18n.chart_translations[5], 'y_suspecte')
+plotsmall("sales-chart4", i18n.chart_translations[6], 'y_vindecati')
+plotsmall("sales-chart5", i18n.chart_translations[7], 'y_decedati')
 
 })(jQuery);
