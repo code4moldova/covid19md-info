@@ -141,5 +141,10 @@
   "in_country": "в стране",
   "epidemiological_files": "Эпидемиологические записи",
   "monitor_at_home": "Под наблюдением дома",
-  "epidemological": "эпидемиологических"
+  "epidemological": "эпидемиологических",
+  "link": "Линк",
+  "tweet": "Твитнуть",
+  "share": "Поделиться",
+  "class": "Класс",
+  "send": "Отправить"
 }

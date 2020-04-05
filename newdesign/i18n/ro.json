@@ -141,5 +141,10 @@
   "in_country": "in țară",
   "epidemiological_files": "Fișe epidemiologice",
   "monitor_at_home": "Monitorizați la domiciliu",
-  "epidemological": "epidemiologice"
+  "epidemological": "epidemiologice",
+  "link": "Link",
+  "tweet": "Tweet",
+  "share": "Trimite",
+  "class": "Class",
+  "send": "Trimite"
 }
