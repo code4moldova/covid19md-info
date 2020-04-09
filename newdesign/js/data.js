@@ -55,7 +55,7 @@ var data = [{"ora": "17:00", "data": "09/03/2020", "vindecati": 0, "decedati": 0
 {"ora": "10:00", "data": "07/04/2020", "vindecati": 40, "decedati": 21, "monitorzare": 37029, "infectate": 965, "fise epidemologice": 2011, "intrate in tara": 2011, "suspecte": 215, "linia_verde": 181},
 {"ora": "18:00", "data": "07/04/2020", "vindecati": 40, "decedati": 22, "monitorzare": 37029, "infectate": 1056, "fise epidemologice": 2011, "intrate in tara": 2011, "suspecte": 215, "linia_verde": 181},
 {"ora": "10:00", "data": "08/04/2020", "vindecati": 43, "decedati": 24, "monitorzare": 37787, "infectate": 1056, "fise epidemologice": 1113, "intrate in tara": 1113, "suspecte": 200, "linia_verde": 181},
-{"ora": "18:00", "data": "08/04/2020", "vindecati": 43, "decedati": 27, "monitorzare": 37787, "infectate": 1174, "fise epidemologice": 1113, "intrate in tara": 1113, "suspecte": 200, "linia_verde": 181}
+{"ora": "18:00", "data": "08/04/2020", "vindecati": 43, "decedati": 27, "monitorzare": 37787, "infectate": 1174, "fise epidemologice": 1113, "intrate in tara": 1113, "suspecte": 200, "linia_verde": 181},
 {"ora": "10:00", "data": "09/04/2020", "vindecati": 50, "decedati": 28, "monitorzare": 38190, "infectate": 1174, "fise epidemologice": 1113, "intrate in tara": 1113, "suspecte": 200, "linia_verde": 181}
 ]; 
 var lastUpdate = "09/04/2020(10:00)";
