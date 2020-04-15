@@ -66,10 +66,13 @@ var data = [{"ora": "17:00", "data": "09/03/2020", "vindecati": 0, "decedati": 0
 {"ora": "18:00", "data": "12/04/2020", "vindecati": 94, "decedati": 31, "monitorzare": 39180, "infectate": 1662, "fise epidemologice": 835, "intrate in tara": 835, "suspecte": 96, "linia_verde": 181},
 {"ora": "10:00", "data": "13/04/2020", "vindecati": 107, "decedati": 33, "monitorzare": 39314, "infectate": 1662, "fise epidemologice": 1395, "intrate in tara": 1395, "suspecte": 74, "linia_verde": 181},
 {"ora": "18:00", "data": "13/04/2020", "vindecati": 107, "decedati": 35, "monitorzare": 39314, "infectate": 1712, "fise epidemologice": 1395, "intrate in tara": 1395, "suspecte": 96, "linia_verde": 181},
-{"ora": "10:00", "data": "14/04/2020", "vindecati": 134, "decedati": 36, "monitorzare": 39315, "infectate": 1847, "fise epidemologice": 1420, "intrate in tara": 1420, "suspecte": 136, "linia_verde": 181}            
+{"ora": "10:00", "data": "14/04/2020", "vindecati": 134, "decedati": 36, "monitorzare": 39315, "infectate": 1847, "fise epidemologice": 1420, "intrate in tara": 1420, "suspecte": 136, "linia_verde": 181},
+{"ora": "18:00", "data": "14/04/2020", "vindecati": 134, "decedati": 36, "monitorzare": 39315, "infectate": 1934, "fise epidemologice": 1420, "intrate in tara": 1420, "suspecte": 136, "linia_verde": 181},
+{"ora": "10:00", "data": "15/04/2020", "vindecati": 134, "decedati": 43, "monitorzare": 39198, "infectate": 1934, "fise epidemologice": 1553, "intrate in tara": 1553, "suspecte": 117, "linia_verde": 181},
+{"ora": "18:00", "data": "15/04/2020", "vindecati": 171, "decedati": 46, "monitorzare": 39198, "infectate": 2049, "fise epidemologice": 1553, "intrate in tara": 1553, "suspecte": 117, "linia_verde": 181}            
 ]; 
-var lastUpdate = "14/04/2020(10:00)";
+var lastUpdate = "15/04/2020(18:00)";
 
 var intervalAni  = ['0-9','10-19','20-29','30-39','40-49','50-59','60-69', '70-79', '80+'];
-var infectatiAni = [58,     69,     193,     264,      295,      410,      296,      105,     23];
-var cazuriImportate = 123, infectariLocale = 1589;
+var infectatiAni = [63,     74,     210,     288,      325,      467,      344,      120,     24];
+var cazuriImportate = 125, infectariLocale = 1789;
